@@ -11,6 +11,8 @@
   padding: 0;
 }
 
+/* Images, svgs and such */
+
 img,
 picture,
 svg {
@@ -30,12 +32,21 @@ svg {
 
 :root {
   --bg-color: #000000;
-  --text-color: #ffffff;
-  --text-color2: #ffc600;
+  --text-color: #ffffff; /* white */
+  --text-color2: #ffc600; /* yellow */
+  --text-color3: #e900ff; /* pink */
   --transparent: rgba(255, 255, 255, 0.05);
   --font-poppins: "Poppins", sans-serif;
-  --accent-gradient1: linear-gradient(to right, #e900ff, #ffc600);
-  --accent-gradient2: linear-gradient(to right, #5800ff, #e900ff);
+  --accent-gradient1: linear-gradient(
+    to right,
+    #e900ff,
+    #ffc600
+  ); /* purple to yellow */
+  --accent-gradient2: linear-gradient(
+    to right,
+    #5800ff,
+    #e900ff
+  ); /* purple to pink */
 
   --fs-h1: 53.75px;
   --fs-h2: 44.79px;
@@ -51,9 +62,12 @@ svg {
 
   h1 {
     font-size: var(--fs-h1);
+    font-weight: 900;
   }
   h2 {
     font-size: var(--fs-h2);
+    font-weight: 800;
+    text-align: center;
   }
   h3 {
     font-size: var(--fs-h3);
@@ -66,6 +80,8 @@ svg {
   }
   h6 {
     font-size: var(--fs-h6);
+    font-weight: 600;
+    max-width: 70vw;
   }
   p {
     font-size: var(--fs-p);
@@ -81,7 +97,6 @@ svg {
 .orange {
   color: var(--text-color2);
 }
-
 /* General styles */
 
 html,
@@ -99,6 +114,8 @@ body {
   color: var(--text-color);
 }
 
+/* Components */
+
 .footer {
   position: fixed;
   display: grid;
@@ -115,16 +132,101 @@ body {
   position: fixed;
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 6rem;
   justify-content: center;
   align-items: center;
   padding: var(--size-fluid-3);
   background: var(--accent-gradient2);
   top: 0;
   width: 100%;
-  height: 6rem;
+  height: 7rem;
   /* backdrop-filter: blur(50px); */
   margin: 0;
+  z-index: 100;
+}
+
+.frontbanner {
+  border: 3px solid;
+  border-image: linear-gradient(to right, #5800ff, #e900ff) 1;
+}
+
+.tech-stack-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+  margin: 20px;
+}
+
+.tech-stack-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack-icon img {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .tech-stack-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Sections */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* max-width: 80vw; */
+  min-width: 70vw;
+  padding: 2rem 0rem;
+  margin-bottom: 0rem;
+  margin-top: 4rem;
+}
+
+.section > * {
+  margin-bottom: 1rem;
+}
+
+.section > *:last-child {
+  margin-bottom: 0;
+}
+
+.ptext {
+  /* pink color */
+  color: #e900ff;
+}
+
+ul.nav-links a,
+button {
+  transition: opacity 0s ease-in-out;
+}
+
+.btn {
+  padding: 0.22rem 0.8rem;
+  border: none;
+  border-radius: 0.15rem;
+  cursor: pointer;
+  font-size: var(--fs-p);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background: #e900ff;
+}
+
+ul.nav-links a:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+ul.nav-links a {
+  padding: 1rem 1.4rem;
 }
 
 ul {
@@ -135,12 +237,12 @@ ul {
 }
 
 ul.nav-links {
-  font-weight: 600;
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {
   ul.nav-links {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -163,14 +265,38 @@ main {
 
 /* Styles for buttons, links, cards,, sections, texts  */
 
-/* Test: */
-
 .gradienttext {
-  background: linear-gradient(to right, #5800ff, #e900ff);
+  background: linear-gradient(to right, #e900ff, #ffc600);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   /* for Firefox */
   background-clip: text;
   color: transparent;
+}
+
+#projectsbtn {
+  position: relative;
+  padding: 8px 16px;
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#projectsbtn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 8px;
+  background: var(--accent-gradient1);
+  z-index: -1;
+}
+
+#projectsbtn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg-color);
+  border-radius: 5px;
+  z-index: -1;
 }
