@@ -65,7 +65,7 @@ svg {
     font-weight: 900;
   }
   h2 {
-    font-size: var(--fs-h2);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-weight: 800;
     text-align: center;
   }
@@ -74,9 +74,11 @@ svg {
   }
   h4 {
     font-size: var(--fs-h4);
+    font-weight: 600;
   }
   h5 {
     font-size: var(--fs-h5);
+    font-weight: 900;
   }
   h6 {
     font-size: var(--fs-h6);
@@ -125,6 +127,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 4.5rem;
+  z-index: 100;
   /* backdrop-filter: blur(400px); */
 }
 
@@ -143,6 +146,7 @@ body {
   /* backdrop-filter: blur(50px); */
   margin: 0;
   z-index: 100;
+  isolation: isolate;
 }
 
 .frontbanner {
@@ -184,7 +188,7 @@ section {
   min-width: 70vw;
   padding: 2rem 0rem;
   margin-bottom: 0rem;
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 
 .section > * {
@@ -227,6 +231,8 @@ button:hover {
 
 ul.nav-links a {
   padding: 1rem 1.4rem;
+  font-weight: 900;
+  font-size: var(--fs-p);
 }
 
 ul {
@@ -239,6 +245,10 @@ ul {
 ul.nav-links {
   font-weight: 900;
 }
+
+/* ul.nav-links a {
+  border-bottom: 2px solid yellow;
+} */
 
 @media (min-width: 768px) {
   ul.nav-links {
@@ -299,4 +309,75 @@ main {
   background: var(--bg-color);
   border-radius: 5px;
   z-index: -1;
+}
+
+/* Blur effects */
+
+/* Footer blur */
+
+.footer-container {
+  position: relative;
+  width: 100%;
+}
+
+.blur3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem; /* Adjust as needed */
+  z-index: -1;
+  isolation: isolate;
+  transform: translateY(100px);
+}
+
+.blur2 {
+  transform: translateY(-0px);
+  width: 100%;
+}
+
+.blur3::after,
+.blur3::before {
+  content: "";
+  position: absolute;
+  inset: 0%;
+  z-index: -1000;
+  border-radius: 0%;
+  overflow: hidden;
+}
+
+.blur3::before {
+  background-image: var(--accent-gradient1);
+  transform: rotate(0deg);
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .blur3::after,
+  .blur3::before {
+    filter: blur(200px);
+  }
+}
+
+/* Navbar blur */
+
+.blur2::after,
+.blur2::before {
+  content: "";
+  inset: 4%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.blur2::before {
+  background-image: var(--accent-gradient2);
+  transform: rotate(0deg);
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .blur2::after,
+  .blur2::before {
+    filter: blur(40px);
+  }
 }

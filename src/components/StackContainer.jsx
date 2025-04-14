@@ -37,7 +37,7 @@ export default function StackContainer() {
         <img src="/supabase-plain-wordmark.svg" style={{filter: 'invert(1)'}} alt="Supabase" />
       </div>
       <div className="tech-stack-icon">
-      <img src="/github-original-wordmark.svg" style={{filter: 'invert(1)'}} alt="GitHub" />
+      <img src="/git.svg" alt="GitHub" />
       </div>
     </div>
   );

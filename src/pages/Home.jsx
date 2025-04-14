@@ -3,16 +3,19 @@ import React from 'react';
 import '../styles/styles.css';
 import FrontBanner from '../components/FrontBanner';
 import FrontText1 from '../components/FrontText1';
+import FrontText2 from '../components/FrontText2';
 import TechStack  from '../components/TechStack';
+import Githubandcvs from '../components/Githubandcvs';
+import TransitionCard from '../components/TransitionCard';
 
 export default function Home() {
   return (
     <>
     <section className='!mr-30'>
-    <div className='hero grid grid-cols-5 gap-10'>
+    <div className='hero grid grid-cols-5 gap-18'>
     <div className='grid-span-1 flex flex-row justify-start items-center'>
     </div>
-      <div className='hero-text col-span-2 flex flex-col justify-center items-center !-mr-18'>
+      <div className='hero-text col-span-2 flex flex-col justify-center items-center'>
         <div>
           <h1 className='gradienttext'>Joni Putkinen</h1>
           <h5 className='gradienttext flex flex-row justify-end m-0 p-0'>Web Developer / Designer</h5>
@@ -30,6 +33,9 @@ export default function Home() {
     <FrontBanner />
     <FrontText1 />
     <TechStack />
+    <FrontText2 />
+    <Githubandcvs />
+    <TransitionCard />
     </>
   )
 }

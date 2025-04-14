@@ -19,6 +19,7 @@ const navLinks = [
 export default function Navbar() {
   return (
     <div className='navbar orange'>
+    <div className='blur2 blur3'></div>
         <div className='picture logo'>
             <img src='/favicon2.png' alt="logo" width={70} className='logo' />
         </div>
