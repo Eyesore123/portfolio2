@@ -99,6 +99,11 @@ svg {
 .orange {
   color: var(--text-color2);
 }
+.ptext {
+  /* pink color */
+  color: #e900ff;
+}
+
 /* General styles */
 
 html,
@@ -197,11 +202,6 @@ section {
 
 .section > *:last-child {
   margin-bottom: 0;
-}
-
-.ptext {
-  /* pink color */
-  color: #e900ff;
 }
 
 ul.nav-links a,
@@ -341,11 +341,6 @@ main {
   transform: translateY(100px);
 }
 
-.blur2 {
-  transform: translateY(-10px);
-  width: 100%;
-}
-
 .blur3::after,
 .blur3::before {
   content: "";
@@ -371,6 +366,11 @@ main {
 
 /* Navbar blur */
 
+.blur2 {
+  transform: translateY(-10px);
+  width: 100%;
+}
+
 .blur2::after,
 .blur2::before {
   content: "";
@@ -389,5 +389,89 @@ main {
   .blur2::after,
   .blur2::before {
     filter: blur(40px);
+  }
+}
+
+/* Front text background blur */
+
+/* New blur4 class that won't affect text opacity */
+.blur4 {
+  position: absolute; /* or fixed depending on your needs */
+  z-index: -2; /* Lower than content but higher than background */
+  pointer-events: none; /* Prevents interaction issues */
+  isolation: isolate; /* Creates a new stacking context */
+  overflow: hidden; /* Helps contain the blur effect */
+  height: auto;
+}
+
+.blur4::after,
+.blur4::before {
+  content: "";
+  position: absolute;
+  inset: 0%;
+  z-index: -1;
+  border-radius: 20%;
+  filter: blur(40px);
+  opacity: 0.15; /* Reduce opacity to make it less intense */
+}
+
+.blur4::before {
+  background-image: var(--accent-gradient1); /* Or any gradient you prefer */
+  transform: rotate(0deg);
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .blur4::after,
+  .blur4::before {
+    filter: blur(100px);
+  }
+}
+
+/* Front page banner moving text effect */
+
+.movingtext {
+  background: linear-gradient(to right, #e900ff, #ffc600);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%; /* add this line */
+  animation: movingtext 2s cubic-bezier(0.5, 0, 0.2, 1) infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movingtext {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.frontbanner {
+  border: 3px solid;
+  border-image: linear-gradient(to right, #5800ff, #e900ff) 1;
+  animation: rotate-border 5s linear infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-border {
+  0% {
+    border-image: linear-gradient(to right, #5800ff, #e900ff) 1;
+  }
+  100% {
+    border-image: linear-gradient(to right, #e900ff, #5800ff) 1;
   }
 }
