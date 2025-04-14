@@ -33,7 +33,7 @@ export default function About() {
               <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>
                 Though I started late, I'm not in a rush and I don't think programming is going anywhere despite all the advancements in AI. I'm here for the long game, to keep learning, building and moving forward. I'm excited to see what the future holds and how I can contribute.
               </p>
-              <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>If you want to see my previous portfolio, click here:</p>
+              <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>If you want to see my previous portfolio or learn more about me or the process of learning to code, click here:</p>
               <button className='btn btn-primary !mb-40'><a href="https://eyesore123.github.io/Joni-s-portfolio/" target='_blank'>Learn more </a>
               </button>
           </div>
