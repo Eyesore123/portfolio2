@@ -12,9 +12,9 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/app" element={<Projects />} />
-        <Route path="/app/contact" element={<Contact />} />
-        <Route path="/app/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Layout>
     </BrowserRouter>
