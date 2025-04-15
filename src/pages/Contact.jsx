@@ -5,7 +5,7 @@ import Emailicon from '../assets/Envelope.svg';
 export default function Contact() {
   return (
     <>
-    <section className='flex flex-row justify-center items-center h-[70vh] !mb-30'>
+    <section className='flex flex-row justify-center items-center h-[67vh] !mb-30'>
         <div className='fronttext1 !pt-12 !pb-22 !pl-6 !pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
             <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold'>Contact Me</h2>
             <div className='!pt-12 !pb-22 !pl-6 !pr-6 w-[100%] flex flex-col justify-center items-center gap-20'>
