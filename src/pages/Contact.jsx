@@ -12,7 +12,7 @@ export default function Contact() {
               <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>Call me or send me an email. I'll get back to you as soon as possible.</p>
               <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>
               {/* Icons and contact info */}
-              <div className='flex flex-col gap-20'>
+              <div className='flex flex-col gap-10 md:gap-20'>
                 <div className='flex flex-row justify-start items-center gap-20'>
                 <img src={Phoneicon} className='phoneicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" />+358449627207
                 </div>

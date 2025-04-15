@@ -6,6 +6,7 @@ const projectData = [
         image: "/images/pnp-power.png",
         description: "A website for a local business in Rantasalmi, Finland. The website is built using React and Tailwind CSS. The website is fully responsive and includes a contact form and a map.",
         stack: [
+            { label: "JavaScript", icon: "/javascript-original.svg" },
             { label: "React", icon: "/react-original.svg" },
             { label: "Tailwind CSS", icon: "/tailwindcss-original.svg" },
         ],
@@ -21,6 +22,7 @@ const projectData = [
         image: "/images/shop.png",
         description: "A shop extension for pnp-power.fi. The shop is built using Next.js and Tailwind CSS. The shop is fully responsive for customer use. The shop includes a cart and a checkout form. Admins have access to a dashboard where they can manage products, orders and newsletters.",
         stack: [
+            { label: "TypeScript", icon: "/typescript-original.svg" },
             { label: "Next.js", icon: "/nextjs-original.svg" },
             { label: "React", icon: "/react-original.svg" },
             { label: "Tailwind CSS", icon: "tailwindcss-original.svg" },

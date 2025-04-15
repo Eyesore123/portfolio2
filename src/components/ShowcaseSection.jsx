@@ -52,9 +52,9 @@ export default function ShowcaseSection() {
         {/* <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold !mb-30'>
           Projects
         </h2> */}
-        <div className='md:w-7/9 flex flex-row gap-34 items-center'>
+        <div className='md:w-7/9 flex flex-col md:flex-row gap-20 md:gap-34 items-center'>
 
-          <div className="w-full md:w-1/4 flex flex-col gap-18">
+          <div className="w-full scale-90 md:scale-100 !-mb-10 !md:mb-0 md:w-1/4 flex flex-col gap-18">
             <h2 className="text-yellow-400 text-xl font-semibold mb-2 !text-left">Now Showing</h2>
             {projectData.map((project, index) => (
               <div key={project.name}>
@@ -91,8 +91,9 @@ export default function ShowcaseSection() {
             <video
               key={`${activeProject.id}-${activeIndex}`}
               src={activeProject.video}
-              className='w-full h-full rounded-lg'
+              className='!pb-6 !md:pb-0 w-full h-full rounded-lg min-w-[370px]'
               autoPlay
+              controls
               muted
               playsInline
               style={{ scale: "1" }}
@@ -103,7 +104,7 @@ export default function ShowcaseSection() {
               onTimeUpdate={handleTimeUpdate}
             />
 
-            <div className='video-controls justify-self-center'>
+            <div className='video-controls !ml-6 !md:ml-0 justify-self-center'>
                 <button
                 className='absolute btn btn-primary top-0 left-0 p-2 bg-gray-800 text-white rounded-full !ml-6 !mr-6'
                 onClick={handlePausePlay}

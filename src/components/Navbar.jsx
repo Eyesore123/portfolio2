@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/styles.css'
 
 const navLinks = [
@@ -17,31 +17,36 @@ const navLinks = [
 ]
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className='navbar orange'>
-    <div className='blur2 blur3'></div>
-        <div className='picture logo'>
+      <div className='blur2 blur3'></div>
+      <div className='picture logo'>
         <a href='/' className='logolink'>
-            <img src='/favicon2.png' alt="logo" width={70} className='logo' />
+          <img src='/favicon2.png' alt="logo" width={70} className='logo' />
         </a>
-        </div>
-        <div className='nav-wrapper'>
-        
-            <ul className='nav-links'>
-                {navLinks.map((link, index) => (
-                    <li key={index}>
-                        <a href={link.href}>{link.label}</a>
-                    </li>
-                ))}
-            </ul>
-            
-        </div>
-        {/* Mobile Menu */}
-        <button
+      </div>
+      <div className='nav-wrapper'>
+        <ul className={`nav-links ${isMenuOpen ? 'nav-active' : ''}`}>
+          {navLinks.map((link, index) => (
+            <li className='nav-link' key={index}>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* Mobile Menu */}
+      <button
         className="btn mobilemenu"
         id="menu-btn"
         aria-label="Menu"
-        aria-expanded="false"
+        aria-expanded={isMenuOpen}
+        onClick={toggleMenu}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

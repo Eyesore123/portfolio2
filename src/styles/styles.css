@@ -507,3 +507,45 @@ main {
     border-image: linear-gradient(to right, #e900ff, #5800ff) 1;
   }
 }
+
+/* Media queries */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .heroimage {
+    height: 130px;
+    object-fit: cover;
+    margin-top: 2rem;
+  }
+
+  :root {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h6 {
+    font-size: 1.2rem !important;
+  }
+
+  section {
+    width: 370px !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+  li {
+    font-size: 1rem !important;
+  }
+
+  ul.nav-links {
+    display: none;
+  }
+  .mobilemenu {
+    display: block;
+  }
+}
