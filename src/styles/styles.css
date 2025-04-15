@@ -548,4 +548,8 @@ main {
   .mobilemenu {
     display: block;
   }
+
+  .fronttext1 {
+    margin: 20px;
+  }
 }
