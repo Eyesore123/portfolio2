@@ -8,6 +8,9 @@ export default function ShowcaseSection() {
     projectData.map(() => 0)
   )
 
+  const [isPlaying, setIsPlaying] = useState(true)
+  const [isFullscreen, setIsFullscreen] = useState(false)
+
   const activeProject = projectData[activeIndex]
   const activeProgress = progresses[activeIndex]
   const activePercentage = (activeProgress / activeProject.duration) * 100
@@ -21,9 +24,31 @@ export default function ShowcaseSection() {
     )
   }
 
+  const handlePausePlay = () => {
+    setIsPlaying(!isPlaying)
+    const video = document.querySelector('video')
+    if (isPlaying) {
+      video.pause()
+    } else {
+      video.play()
+    }
+  }
+
+  const handleFullscreen = () => {
+    if (isFullscreen) {
+      document.exitFullscreen();
+    } else {
+      const video = document.querySelector('video');
+      video.requestFullscreen();
+    }
+    document.addEventListener('fullscreenchange', () => {
+      setIsFullscreen(document.fullscreenElement !== null);
+    });
+  };
+
   return (
     <>
-      <section className='flex flex-row justify-center items-center h-[69vh] !mb-30 !mt-8'>
+      <section className='flex flex-row justify-center items-center h-[69vh] !mb-20 !mt-8'>
         {/* <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold !mb-30'>
           Projects
         </h2> */}
@@ -77,6 +102,22 @@ export default function ShowcaseSection() {
               }}
               onTimeUpdate={handleTimeUpdate}
             />
+
+            <div className='video-controls justify-self-center'>
+                <button
+                className='absolute btn btn-primary top-0 left-0 p-2 bg-gray-800 text-white rounded-full !ml-6 !mr-6'
+                onClick={handlePausePlay}
+                >
+                {isPlaying ? 'Pause' : 'Play'}
+                </button>
+                <button
+                className='absolute btn btn-primary top-0 right-0 bg-gray-800 text-white rounded-full !ml-6 !mr-6'
+                onClick={handleFullscreen}
+                >
+                {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
+                </button>
+            </div>
+
           </div>
 
         </div>
