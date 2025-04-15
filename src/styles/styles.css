@@ -396,11 +396,11 @@ main {
 
 /* New blur4 class that won't affect text opacity */
 .blur4 {
-  position: absolute; /* or fixed depending on your needs */
-  z-index: -2; /* Lower than content but higher than background */
-  pointer-events: none; /* Prevents interaction issues */
-  isolation: isolate; /* Creates a new stacking context */
-  overflow: hidden; /* Helps contain the blur effect */
+  position: absolute;
+  z-index: -2;
+  pointer-events: none;
+  isolation: isolate;
+  overflow: hidden;
   height: auto;
 }
 
@@ -412,11 +412,11 @@ main {
   z-index: -1;
   border-radius: 20%;
   filter: blur(40px);
-  opacity: 0.15; /* Reduce opacity to make it less intense */
+  opacity: 0.25;
 }
 
 .blur4::before {
-  background-image: var(--accent-gradient1); /* Or any gradient you prefer */
+  background-image: var(--accent-gradient1);
   transform: rotate(0deg);
   position: absolute;
 }
@@ -435,8 +435,8 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 100%; /* add this line */
-  animation: movingtext 2s cubic-bezier(0.5, 0, 0.2, 1) infinite;
+  background-size: 200% 100%;
+  animation: movingtext 1s cubic-bezier(0.5, 0, 0.2, 1) infinite;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }

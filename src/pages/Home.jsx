@@ -17,8 +17,8 @@ export default function Home() {
     </div>
       <div className='hero-text col-span-2 flex flex-col justify-center items-center'>
         <div>
-          <h1 className='gradienttext'>Joni Putkinen</h1>
-          <h6 className='gradienttext flex flex-row justify-end m-0 p-0'>Web Developer / Designer</h6>
+          <h1 className='movingtext'>Joni Putkinen</h1>
+          <h6 className='movingtext flex flex-row justify-end m-0 p-0'>Web Developer / Designer</h6>
           <div className='flex flex-row justify-end items-center'>
           <a href='/projects' className='gradienttext flex flex-row justify-end !mt-20 font-bold' id='projectsbtn'>Recent projects
           </a>
