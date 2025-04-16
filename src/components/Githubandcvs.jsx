@@ -15,7 +15,9 @@ export default function Githubandcvs() {
                     </h5>
                     <div className='flex flex-col justify-center items-center !mb-6'>
                         <div>
-                        <img src='/githubicon.png' width={100} alt='githubicon' className='githubicon' />
+                        <a href='https://github.com/Eyesore123/' target='_blank' rel='noopener noreferrer' className='hover:cursor-pointer'>
+                        <img src='/githubicon.png' width={100} alt='githubicon' className='githubicon hover:opacity-80' />
+                        </a>
                         </div>
                     </div>
                 </div>
