@@ -688,7 +688,7 @@ main {
 
 .reveal-on-scroll {
   opacity: 0;
-  transform: none; /* remove translateY */
+  transform: none;
   transition: opacity 2s ease;
   will-change: opacity;
 }
