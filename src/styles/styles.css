@@ -111,7 +111,6 @@ body {
 }
 
 body {
-  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
