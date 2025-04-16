@@ -554,10 +554,10 @@ main {
 .blur4::before {
   content: "";
   position: absolute;
-  inset: -5%;
+  inset: -30%;
   z-index: -1;
   border-radius: 20%;
-  filter: blur(40px);
+  filter: blur(20px);
   opacity: 0.27;
 }
 
@@ -566,7 +566,19 @@ main {
 .blur4::before {
   background-image: var(--accent-gradient1);
   transform: rotate(0deg) scale(1);
-  animation: blur4move 12s ease-in-out infinite alternate;
+  animation: blur4move 12s ease-in-out infinite alternate,
+    blur4glow 6s ease-in-out infinite alternate;
+}
+
+@keyframes blur4glow {
+  0% {
+    opacity: 0.18;
+    filter: blur(40px) brightness(1);
+  }
+  100% {
+    opacity: 0.35;
+    filter: blur(45px) brightness(1.2);
+  }
 }
 
 @keyframes blur4move {
