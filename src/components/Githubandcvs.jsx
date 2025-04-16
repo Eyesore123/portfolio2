@@ -26,14 +26,20 @@ export default function Githubandcvs() {
                         CVs
                     </h5>
                     <div className='flex flex-col justify-center items-center'>
-                        <small className='cvsmall orange !mt-12'>
-                        CV for IT field:
-                        </small>
-                        <button className='btn btn-primary !m-6'>download</button>
+
+
                         <small className='cvsmall orange !mt-8'>
                         General CV:
                         </small>
+                        <a href="/CVs/english.pdf" download="CV_Joni_Putkinen">
                         <button className='btn btn-primary !m-6'>download</button>
+                        </a>
+
+                        <small className='cvsmall orange !mt-12'>
+                        CV for IT field:
+                        </small>
+                        <button className='btn bg-gray-600 !m-6'>Coming soon!</button>
+
                     </div>
                 </div>
             </div>
