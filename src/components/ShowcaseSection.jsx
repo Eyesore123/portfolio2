@@ -106,14 +106,14 @@ export default function ShowcaseSection() {
 
             <div className='video-controls absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-10'>
               <button
-                className='btn btn-primary p-2 bg-gray-800 text-white rounded-full'
+                className='btn btn-primary p-2 bg-gray-800 text-white rounded-full hidden md:block'
                 onClick={handlePausePlay}
               >
                 {isPlaying ? 'Pause' : 'Play'}
               </button>
               
               <button
-                className='btn btn-primary p-2 bg-gray-800 text-white rounded-full'
+                className='btn btn-primary p-2 bg-gray-800 text-white rounded-full hidden md:block'
                 onClick={handleFullscreen}
               >
                 {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
