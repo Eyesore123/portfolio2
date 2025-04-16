@@ -104,19 +104,20 @@ export default function ShowcaseSection() {
               onTimeUpdate={handleTimeUpdate}
             />
 
-            <div className='video-controls !ml-6 !md:ml-0 justify-self-center'>
-                <button
-                className='absolute btn btn-primary top-0 left-0 p-2 bg-gray-800 text-white rounded-full !ml-6 !mr-6'
+            <div className='video-controls absolute bottom-4 left-0 right-0 flex justify-center gap-4 z-10'>
+              <button
+                className='btn btn-primary p-2 bg-gray-800 text-white rounded-full'
                 onClick={handlePausePlay}
-                >
+              >
                 {isPlaying ? 'Pause' : 'Play'}
-                </button>
-                <button
-                className='absolute btn btn-primary top-0 right-0 bg-gray-800 text-white rounded-full !ml-6 !mr-6'
+              </button>
+              
+              <button
+                className='btn btn-primary p-2 bg-gray-800 text-white rounded-full'
                 onClick={handleFullscreen}
-                >
+              >
                 {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
-                </button>
+              </button>
             </div>
 
           </div>
