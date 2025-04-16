@@ -24,10 +24,6 @@ svg {
   border-radius: 50%;
 }
 
-.mobilemenu {
-  display: none;
-}
-
 /* Root styles for variables */
 
 :root {
@@ -215,6 +211,113 @@ body {
   margin-top: 20px;
 }
 
+/* Mobile menu */
+
+.mobilemenu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    z-index: 99;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+
+    /* Animation */
+
+    /* display: flex;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none; */
+  }
+
+  /* .nav-links.nav-active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  } */
+
+  /* .nav-links li {
+    margin: 1rem 0;
+  } */
+
+  /* Without animation */
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+
+  .nav-links.nav-active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .nav-wrapper {
+    height: 100%;
+  }
+
+  .mobilemenu {
+    display: block;
+    position: absolute;
+    color: var(--text-color2);
+    right: 4rem;
+    z-index: 100;
+    background: none;
+    border: none;
+    color: #ffc600;
+  }
+
+  .navbar {
+    gap: 16rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  ul.nav-links {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-link a {
+    padding: 0px !important;
+  }
+
+  .nav-links li {
+    width: 100px !important; /* Increased from 60px to 100px */
+  }
+
+  li.nav-link {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li.nav-link a {
+    /* Fixed selector from "li nav-link a" to "li.nav-link a" */
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px !important;
+  }
+
+  .navbar {
+    gap: 4rem;
+  }
+}
+
 /* Sections */
 
 section {
@@ -226,6 +329,18 @@ section {
   padding: 2rem 0rem;
   margin-bottom: 0rem;
   margin-top: 0rem;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .frontbanner {
+    width: 75vw;
+  }
+
+  .heroimage {
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+  }
 }
 
 .section > * {
@@ -447,10 +562,24 @@ main {
   opacity: 0.27;
 }
 
+/* Animation with a slight movement */
+
 .blur4::before {
   background-image: var(--accent-gradient1);
-  transform: rotate(0deg);
-  position: absolute;
+  transform: rotate(0deg) scale(1);
+  animation: blur4move 10s ease-in-out infinite alternate;
+}
+
+@keyframes blur4move {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.05) translate(50px, -50px);
+  }
+  100% {
+    transform: rotate(-10deg) scale(1.1) translate(-50px, 50px);
+  }
 }
 
 @media (min-width: 768px) {
@@ -544,9 +673,6 @@ main {
 
   ul.nav-links {
     display: none;
-  }
-  .mobilemenu {
-    display: block;
   }
 
   .fronttext1 {

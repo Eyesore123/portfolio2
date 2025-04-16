@@ -4,7 +4,7 @@ const projectData = [
         name: 'PNP-Power.fi',
         video: "/videos/pnp-power_ready.mp4",
         image: "/images/pnp-power.png",
-        description: "A website for a local business in Rantasalmi, Finland. The website is built using React and Tailwind CSS. The website is fully responsive and includes a contact form and a map.",
+        description: "A website for a local business in Rantasalmi, Finland. The website is built using React and Tailwind CSS. The website is fully responsive and includes a contact form and a map. User can change language between Finnish and English at any time.",
         stack: [
             { label: "JavaScript", icon: "/javascript-original.svg" },
             { label: "React", icon: "/react-original.svg" },
@@ -20,13 +20,14 @@ const projectData = [
         name: 'PNP-Power Shop',
         video: "/videos/shop_ready.mp4",
         image: "/images/shop.png",
-        description: "A shop extension for pnp-power.fi. The shop is built using Next.js and Tailwind CSS. The shop is fully responsive for customer use. The shop includes a cart and a checkout form. Admins have access to a dashboard where they can manage products, orders and newsletters.",
+        description: "A shop extension for pnp-power.fi. The shop is built using Next.js and Tailwind CSS. Styles are fully responsive for customer use (admin board is not). The shop includes a cart and a checkout form. Admins have access to a dashboard where they can manage products, orders and newsletters.",
         stack: [
             { label: "TypeScript", icon: "/typescript-original.svg" },
             { label: "Next.js", icon: "/nextjs-original.svg" },
             { label: "React", icon: "/react-original.svg" },
             { label: "Tailwind CSS", icon: "tailwindcss-original.svg" },
             { label: "Firebase", icon: "/firebase-original.svg" },
+            { label: "Node.js", icon: "/nodejs-original-wordmark.svg" },
         ],
         liveLink: "https://car-mechanic-website-shop.vercel.app/",
         codeLink: "https://github.com/Eyesore123/car-mechanic-website-shop",
@@ -53,7 +54,7 @@ const projectData = [
         name: 'Snake Game',
         video: "/videos/snakegame_ready.mp4",
         image: "/images/snake_game.png",
-        description: "A classic snake game made with JavaScript. Doesn't look the greatest but works really well. Comes with an extensive options menu.",
+        description: "A classic snake game made with JavaScript. Doesn't look the greatest but works really well. Comes with an extensive options menu. Game gets faster and backgrounds change as you play. Two soundtracks. ",
         stack: [
             { label: "JavaScript", icon: "/javascript-original.svg" },
         ],
