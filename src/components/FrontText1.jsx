@@ -27,10 +27,10 @@ export default function FrontText1() {
     <section className='flex flex-row justify-center items-center h-160'>
       <div className='blur4 w-full flex flex-col justify-center items-center !h-120'>
         <div className='flex flex-col justify-center items-center w-full'>
-          <div className='fronttext1 md:!pt-22 md:!pb-22 md:!pl-6 md:!pr-6 md:w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
+          <div className='fronttext1 md:!pt-16 md:!pb-22 md:!pl-6 md:!pr-6 md:w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
             <p
               ref={ref}
-              className='ptext reveal-on-scroll text-center font-bold max-w-200'
+              className='ptext !-mt-2 md:!mt-0 reveal-on-scroll text-center font-bold max-w-200'
             >
              {t("home.frontText1")}
             </p>

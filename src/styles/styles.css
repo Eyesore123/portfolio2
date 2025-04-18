@@ -323,6 +323,7 @@ body {
 
   #projectsbtn {
     max-width: 140px;
+    margin-bottom: 20px;
   }
 
   .navbar {
@@ -708,6 +709,11 @@ main {
 
   :root {
     font-size: 14px;
+  }
+
+  section {
+    padding-top: 0;
+    padding-bottom: 0rem;
   }
 
   h1 {
