@@ -330,7 +330,7 @@ body {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1400px) {
   ul.nav-links {
     width: 530px;
     margin: 0 !important;

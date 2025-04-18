@@ -33,17 +33,17 @@ export default function Githubandcvs() {
 
 
                         <small className='cvsmall orange !mt-8'>
-                        General CV:
+                        {t("home.buttonheader1")}
                         </small>
                         <a href="/CVs/english.pdf" download="CV_Joni_Putkinen">
-                        <button className='btn btn-primary !m-6'>download</button>
+                        <button className='btn btn-primary !m-6'>{t("home.downloadbutton")}</button>
                         </a>
 
                         <small className='cvsmall orange !mt-12'>
-                        CV for IT field:
+                        {t("home.buttonheader2")}
                         </small>
                         <a href='/CVs/english_IT.pdf' download="CV_Joni_Putkinen_IT">
-                        <button className='btn btn-primary !m-6'>download</button>
+                        <button className='btn btn-primary !m-6'>{t("home.downloadbutton")}</button>
                         </a>
 
                     </div>
