@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import '../styles/styles.css'
+import { useTranslation } from 'react-i18next';
 
 export default function FrontText1() {
   const ref = useRef()
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,9 +32,7 @@ export default function FrontText1() {
               ref={ref}
               className='ptext reveal-on-scroll text-center font-bold max-w-200'
             >
-              I specialize in building user-centric websites and web apps with React.js, Astro, Next.js,
-              WordPress and modern design tools (Figma etc.). I bring clarity to digital experiences, whether
-              it’s clean code or clean layouts.
+             {t("home.frontText1")}
             </p>
           </div>
         </div>

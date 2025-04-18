@@ -1,12 +1,16 @@
 import React from 'react'
 import '../styles/styles.css'
+import { useTranslation } from 'react-i18next';
 
 export default function Githubandcvs() {
+
+    const { t } = useTranslation();
+
   return (
     <>
         <section className='flex flex-row justify-center items-center'>
             <div className='!mt-10 !pb-22 !pl-6 !pr-6 w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
-            <h2 className='gradienttext flex flex-row justify-center items-center'>Check out my Github and CV:</h2>
+            <h2 className='gradienttext flex flex-row justify-center items-center'>{t("home.header2")}</h2>
             </div>
             <div className='splitcontainer grid grid-cols-2 gap-20 md:gap-0 min-h-60 w-[50%] lg:max-w-[50%]'>
                 <div className='githubcontainer flex flex-col items-center'>
@@ -23,7 +27,7 @@ export default function Githubandcvs() {
                 </div>
                 <div className='cvcontainer flex flex-col justify-center items-center'>
                     <h5 className='cv ptext w-full flex justify-center'>
-                        CVs
+                        {t("home.header4")}
                     </h5>
                     <div className='flex flex-col justify-center items-center'>
 

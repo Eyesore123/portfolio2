@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import '../styles/styles.css'
+import { useTranslation } from 'react-i18next';
 
 export default function FrontText2() {
     const ref = useRef()
+    const { t } = useTranslation();
   
     useEffect(() => {
       const observer = new IntersectionObserver(
@@ -28,8 +30,7 @@ export default function FrontText2() {
         <div className='fronttext1 !pt-22 !pb-22 !pl-6 !pr-6 md:w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
         <p
         ref={ref}
-         className='flex flex-row justify-center items-center text-center ptext reveal-on-scroll font-bold max-w-200'>I aim to craft websites and web apps that not only look great but also
-        help businesses grow, reach more people and make a lasting impression. </p>
+         className='flex flex-row justify-center items-center text-center ptext reveal-on-scroll font-bold max-w-200'>{t("home.frontText2")} </p>
         </div>
         </div>
         </div>

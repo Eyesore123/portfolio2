@@ -4,9 +4,9 @@ export default function About() {
   return (
     <>
     <section className='flex flex-row justify-center items-center'>
-        <div className='fronttext1 !pt-12 md:!pb-22 md:!pl-6 md:!pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
+        <div className='fronttext1 md:!pt-12 md:!pb-22 md:!pl-6 md:!pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
             <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold'>About Me</h2>
-            <div className='!pt-12 !pb-22 !pl-6 !pr-6 w-[100%] flex flex-col justify-center items-center gap-20'>
+            <div className='!pt-12 !pb-22 !pl-0 !pr-0 md:!pl-6 md:!pr-6 w-[100%] flex flex-col justify-center items-center gap-20'>
               <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>Hey there! I'm Joni - a 32-year-old self-taught developer with a background in philosophy, sports sciences and sociology. I'm currently in a career transition, building my skills in web development while planning to launch my own digital business.</p>
               <h6 className='gradienttext flex flex-row justify-center items-center text-center font-bold max-w-200 '>From Academia to Administration</h6>
               <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>I graduated from the University of Jyväskylä in 2019 with three master's degrees. Later I worked as a municipal sports secretary in Ilomantsi where I was coordinating and organizing youth and sports services. While the role had its challenges, I valued the opportunity to make a tangible difference. Over time my curiosity and drive led me towards new areas - especially technology and coding.</p>

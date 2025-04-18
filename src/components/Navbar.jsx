@@ -1,27 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import '../styles/styles.css'
-
-const navLinks = [
-    { 
-        label: 'Home', href: '/'
-    },
-    {
-        label: 'Projects', href: '/projects'
-    },
-    {
-        label: 'About', href: '/about'
-    },
-    {
-        label: 'Contact Me', href: '/contact'
-    },
-]
+import { useTranslation } from 'react-i18next';
+import { LanguageContext } from '../context/LanguageContext';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { selectedLanguage, changeLanguage } = useContext(LanguageContext);
+  
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const navLinks = [
+    { 
+        label: t("navbar.home"), href: '/'
+    },
+    {
+        label: t("navbar.projects"), href: '/projects'
+    },
+    {
+        label: t("navbar.about"), href: '/about'
+    },
+    {
+        label: t("navbar.contact"), href: '/contact'
+    },
+]
 
   return (
     <div className='navbar orange'>
@@ -39,6 +44,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
       </div>
       {/* Mobile Menu */}
       <button
@@ -60,6 +66,10 @@ export default function Navbar() {
           ></path>
         </svg>
       </button>
+      <button className='languagebutton' onClick={() => changeLanguage(selectedLanguage === 'en' ? 'fi' : 'en')}>
+        {selectedLanguage === 'en' ? 'FI' : 'EN'}
+      </button>
     </div>
+    
   )
 }

@@ -6,8 +6,12 @@ import FrontText2 from '../components/FrontText2';
 import TechStack from '../components/TechStack';
 import Githubandcvs from '../components/Githubandcvs';
 import TransitionCard from '../components/TransitionCard';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <section className='!mr-30'>
@@ -18,7 +22,7 @@ export default function Home() {
             <div>
               <h1 className='movingtext'>Joni Putkinen</h1>
               <h6 className='movingtext flex flex-row text-start xl:justify-end m-0 p-0'>
-                Web Developer / Designer
+                {t("home.heading1")}
               </h6>
               <div className='flex flex-row justify-end items-center'>
                 <a
@@ -26,7 +30,7 @@ export default function Home() {
                   className='gradienttext flex flex-row justify-end !mt-20 font-bold'
                   id='projectsbtn'
                 >
-                  Recent projects
+                  {t("home.button1")}
                 </a>
               </div>
             </div>

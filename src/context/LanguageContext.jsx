@@ -2,7 +2,6 @@ import React, { createContext, useState } from 'react';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import translations from './translationsglobal.json';
-
 i18n.use(initReactI18next).init({
   resources: {
     en: {
@@ -12,7 +11,7 @@ i18n.use(initReactI18next).init({
       translation: translations.fi,
     },
   },
-  lng: 'en',
+  lng: 'en', // Keep this as 'en' to set the initial language to English
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false,
@@ -22,15 +21,15 @@ i18n.use(initReactI18next).init({
 const LanguageContext = createContext();
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('fi');
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setLanguage(lng);
+    setSelectedLanguage(lng);
   };
 
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage }}>
+    <LanguageContext.Provider value={{ selectedLanguage, changeLanguage }}>
       {children}
     </LanguageContext.Provider>
   );

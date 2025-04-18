@@ -247,6 +247,12 @@ body {
 .mobilemenu {
   display: none;
 }
+
+.languagebutton {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -299,15 +305,24 @@ body {
     height: 100%;
   }
 
+  .languagebutton {
+    position: fixed !important;
+    right: 10rem;
+  }
+
   .mobilemenu {
     display: block;
     position: absolute;
     color: var(--text-color2);
-    right: 4rem;
+    right: 3rem;
     z-index: 100;
     background: none;
     border: none;
     color: #ffc600;
+  }
+
+  #projectsbtn {
+    max-width: 140px;
   }
 
   .navbar {
@@ -317,7 +332,8 @@ body {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   ul.nav-links {
-    width: 600px;
+    width: 530px;
+    margin: 0 !important;
     display: flex;
     justify-content: space-between;
   }
