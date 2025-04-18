@@ -586,7 +586,7 @@ main {
 .blur4::before {
   content: "";
   position: absolute;
-  inset: -30%;
+  inset: -55%;
   z-index: -1;
   border-radius: 20%;
   filter: blur(20px);
