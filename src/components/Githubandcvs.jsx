@@ -38,7 +38,9 @@ export default function Githubandcvs() {
                         <small className='cvsmall orange !mt-12'>
                         CV for IT field:
                         </small>
-                        <button className='btn bg-gray-600 !m-6'>Coming soon!</button>
+                        <a href='/CVs/english_IT.pdf' download="CV_Joni_Putkinen_IT">
+                        <button className='btn btn-primary !m-6'>download</button>
+                        </a>
 
                     </div>
                 </div>

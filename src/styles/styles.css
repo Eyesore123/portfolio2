@@ -727,8 +727,6 @@ main {
   }
 }
 
-/* Text reveal effect */
-
 .reveal-on-scroll {
   opacity: 0;
   transform: none;

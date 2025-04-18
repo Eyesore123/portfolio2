@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className='blur2 blur3'></div>
       <div className='picture logo'>
         <a href='/' className='logolink'>
-          <img src='/favicon2.png' alt="logo" width={70} className='logo' />
+          <img src='/favicon3.png' alt="logo" width={70} className='logo' />
         </a>
       </div>
       <div className='nav-wrapper'>
