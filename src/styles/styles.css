@@ -730,6 +730,25 @@ main {
     font-size: 1.5rem !important;
   }
 
+  @media (max-width: 480px) {
+    .animationh5 {
+      font-size: 1rem !important;
+    }
+    h1 {
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    #projectsbtn {
+      margin-top: -20px !important;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    h5 {
+      font-size: 1.3rem !important;
+    }
+  }
+
   h6 {
     font-size: 1.2rem !important;
   }
@@ -766,7 +785,39 @@ main {
   opacity: 1;
 }
 
-/* Effects */
+/* Effects for front page text typing and custom cursor for TypeAnimation  */
+
+.typinganimation {
+  font-weight: 600;
+}
+.custom-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #cccccc;
+  margin-left: 2px;
+  animation: blink-custom-cursor 1s step-end infinite;
+  vertical-align: text-bottom;
+  border-radius: 1px;
+  position: relative;
+  top: 6px;
+}
+
+@media (max-width: 500px) {
+  .custom-cursor {
+    top: 4px;
+  }
+}
+
+@keyframes blink-custom-cursor {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 
 /* Test */
 

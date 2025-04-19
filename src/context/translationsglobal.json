@@ -1,6 +1,9 @@
 {
   "en": {
-    "home.heading1": "Web Developer / Designer",
+    "home.heading1": "Web Developer",
+    "home.heading2": "UI Designer",
+    "home.heading3": "Problem solver",
+    "home.heading4": "Self-taught Coder",
     "home.button1": "Recent projects",
     "home.frontbannerline1": "Crafting creative web apps",
     "home.frontbannerline2": "since 2023!",
@@ -56,7 +59,10 @@
   },
   
   "fi": {
-  "home.heading1": "Web-kehittäjä / Suunnittelija",
+  "home.heading1": "Web-kehittäjä",
+    "home.heading2": "UI-kehittäjä",
+    "home.heading3": "Ongelmanratkaisija",
+    "home.heading4": "Itseoppinut koodari",
   "home.button1": "Viimeisimmät projektit",
   "home.frontbannerline1": "Tyylikkäitä ja kekseliäitä",
   "home.frontbannerline2": "verkkosivuja vuodesta 2023!",
