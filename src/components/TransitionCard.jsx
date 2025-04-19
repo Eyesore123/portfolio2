@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/styles.css'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function TransitionCard() {
 
@@ -13,7 +14,7 @@ export default function TransitionCard() {
             <h2 className='gradienttext flex flex-row justify-center items-center text-center ptext font-bold'>{t("home.header3")}</h2>
             <div>
                 <button className='btn btn-primary !mb-40'>
-                    <a href='/about'>{t("home.button")}</a>
+                    <Link to='/about'>{t("home.button")}</Link>
                 </button>
             </div>
         </div>
