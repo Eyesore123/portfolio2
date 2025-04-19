@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <section className='!mr-30'>
+      <section className='!mr-20 md:!mr-30'>
         <div className='!ml-4 md:!ml-0 hero grid grid-cols-5 gap-14 md:gap-20 xl:gap-0 lg:!mr-0 2xl:!mr-0'>
           <div className='grid-span-1 flex flex-row justify-start items-center'></div>
 

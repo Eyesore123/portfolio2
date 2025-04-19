@@ -1,50 +1,64 @@
-import React, { useState, useContext } from 'react'
-import '../styles/styles.css'
+import React, { useState, useContext } from 'react';
+import '../styles/styles.css';
 import { useTranslation } from 'react-i18next';
 import { LanguageContext } from '../context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { selectedLanguage, changeLanguage } = useContext(LanguageContext);
-  
   const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   const navLinks = [
-    { 
-        label: t("navbar.home"), href: '/'
+    {
+      label: t("navbar.home"), 
+      path: '/'
     },
     {
-        label: t("navbar.projects"), href: '/projects'
+      label: t("navbar.projects"), 
+      path: '/projects'
     },
     {
-        label: t("navbar.about"), href: '/about'
+      label: t("navbar.about"), 
+      path: '/about'
     },
     {
-        label: t("navbar.contact"), href: '/contact'
+      label: t("navbar.contact"), 
+      path: '/contact'
     },
-]
+  ];
 
   return (
     <div className='navbar orange'>
       <div className='blur2 blur3'></div>
       <div className='picture logo'>
-        <a href='/' className='logolink'>
+        <Link to='/' className='logolink'>
           <img src='/favicon3.png' alt="logo" width={70} className='logo' />
-        </a>
+        </Link>
       </div>
       <div className='nav-wrapper'>
         <ul className={`nav-links ${isMenuOpen ? 'nav-active' : ''}`}>
           {navLinks.map((link, index) => (
             <li className='nav-link' key={index}>
-              <a href={link.href}>{link.label}</a>
+              <Link 
+                to={link.path} 
+                onClick={handleLinkClick}
+              >
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
-
       </div>
       {/* Mobile Menu */}
       <button
@@ -66,10 +80,12 @@ export default function Navbar() {
           ></path>
         </svg>
       </button>
-      <button className='languagebutton' onClick={() => changeLanguage(selectedLanguage === 'en' ? 'fi' : 'en')}>
+      <button 
+        className='languagebutton btn scale-125 !mt-1' 
+        onClick={() => changeLanguage(selectedLanguage === 'en' ? 'fi' : 'en')}
+      >
         {selectedLanguage === 'en' ? 'FI' : 'EN'}
       </button>
     </div>
-    
-  )
+  );
 }

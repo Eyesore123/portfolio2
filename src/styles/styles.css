@@ -289,6 +289,8 @@ body {
 
   .nav-links.nav-active {
     display: flex;
+    margin-top: -14px;
+    padding-top: 0;
   }
 
   .nav-links.nav-active {

@@ -4,6 +4,7 @@ const projectData = [
         name: 'PNP-Power.fi',
         video: "/videos/pnp-power_ready.mp4",
         image: "/images/pnp-power.png",
+        descriptionKey: "projects.card1text",
         description: "A website for a local business in Rantasalmi, Finland. The website is built using React and Tailwind CSS. The website is fully responsive and includes a contact form and a map. User can change language between Finnish and English at any time.",
         stack: [
             { label: "JavaScript", icon: "/javascript-original.svg" },
@@ -20,6 +21,7 @@ const projectData = [
         name: 'PNP-Power Shop',
         video: "/videos/shop_ready.mp4",
         image: "/images/shop.png",
+        descriptionKey: "projects.card2text",
         description: "A shop extension for pnp-power.fi. The shop is built using Next.js and Tailwind CSS. Styles are fully responsive for customer use (admin board is not). The shop includes a cart and a checkout form. Admins have access to a dashboard where they can manage products, orders and newsletters.",
         stack: [
             { label: "TypeScript", icon: "/typescript-original.svg" },
@@ -39,6 +41,7 @@ const projectData = [
         name: 'Laatumarjat.fi',
         video: "/videos/laatumarjat_ready.mp4",
         image: "/images/Laatumarjat.png",
+        descriptionKey: "projects.card3text",
         description: "A website made with WordPress, for the purpose of selling berries. Responsive layout. Contact form. Theme: Astra. ",
         stack: [
             { label: "Wordpress", icon: "/wordpress-plain-wordmark.svg" },
@@ -54,6 +57,7 @@ const projectData = [
         name: 'Snake Game',
         video: "/videos/snakegame_ready.mp4",
         image: "/images/snake_game.png",
+        descriptionKey: "projects.card4text",
         description: "A classic snake game made with JavaScript. Doesn't look the greatest but works really well. Comes with an extensive options menu. Game gets faster and backgrounds change as you play. Two soundtracks. ",
         stack: [
             { label: "JavaScript", icon: "/javascript-original.svg" },

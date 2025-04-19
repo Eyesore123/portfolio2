@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import '../styles/styles.css'
 import projectData from '../data/projects'
+import { useTranslation } from 'react-i18next';
 
 export default function ShowcaseSection() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [progresses, setProgresses] = useState(
     projectData.map(() => 0)
   )
+
+  const { t } = useTranslation();
 
   const [isPlaying, setIsPlaying] = useState(true)
   const [isFullscreen, setIsFullscreen] = useState(false)
@@ -55,7 +58,7 @@ export default function ShowcaseSection() {
         <div className='md:w-7/9 flex flex-col md:flex-row gap-20 md:gap-34 items-center'>
 
           <div className="w-full scale-90 md:scale-100 md:!mb-10 !md:mb-0 md:w-1/4 flex flex-col gap-18">
-            <h2 className="text-yellow-400 text-xl font-semibold mb-2 !text-left">Now Showing</h2>
+            <h2 className="text-yellow-400 text-xl font-semibold mb-2 !text-left">{t("projects.header1")}</h2>
             {projectData.map((project, index) => (
               <div key={project.name}>
                 <button
@@ -109,14 +112,15 @@ export default function ShowcaseSection() {
                 className='btn btn-primary p-2 bg-gray-800 text-white rounded-full hidden md:block'
                 onClick={handlePausePlay}
               >
-                {isPlaying ? 'Pause' : 'Play'}
+                {isPlaying ? t("projects.pausebutton") : t("projects.playbutton")}
+
               </button>
               
               <button
                 className='btn btn-primary p-2 bg-gray-800 text-white rounded-full hidden md:block'
                 onClick={handleFullscreen}
               >
-                {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
+                {isFullscreen ? t("projects.exitfullscreen") : t("projects.fullscreenbutton")}
               </button>
             </div>
 

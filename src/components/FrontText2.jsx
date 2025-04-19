@@ -30,7 +30,7 @@ export default function FrontText2() {
         <div className='fronttext1 md:!pt-16 !pb-22 !pl-6 !pr-6 md:w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
         <p
         ref={ref}
-         className='!mt-12 md:!mt-0 flex flex-row justify-center items-center text-center ptext reveal-on-scroll font-bold max-w-200'>{t("home.frontText2")} </p>
+         className='!mt-14 md:!mt-0 flex flex-row justify-center items-center text-center ptext reveal-on-scroll font-bold max-w-200'>{t("home.frontText2")} </p>
         </div>
         </div>
         </div>

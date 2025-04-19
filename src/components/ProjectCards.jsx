@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next"; // Add this import
 import projectData from "../data/projects";
 
 export default function ProjectCards() {
+  const { t } = useTranslation(); // Add this line to access translations
   const [isImageFullscreen, setIsImageFullscreen] = useState(false);
-
+  
   const handleImageClick = (event) => {
     const image = event.target;
     if (isImageFullscreen) {
@@ -14,7 +16,7 @@ export default function ProjectCards() {
     }
     setIsImageFullscreen(!isImageFullscreen);
   };
-
+  
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:!gap-12 lg:gap-46 xl:gap-16 px-4 !mt-20 !md:mt-0 py-10">
@@ -29,7 +31,9 @@ export default function ProjectCards() {
               />
               <div className="!pl-4">
                 <h4 className="text-xl font-semibold !mb-4 !mt-2">{project.name}</h4>
-                <p className="text-white/80 mb-4 !mr-4 h-auto min-h-36">{project.description}</p>
+                <p className="text-white/80 mb-4 !mr-4 h-auto min-h-36">
+                  {t(project.descriptionKey)}
+                </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.stack?.map((tech) => (
                     <img
@@ -49,16 +53,18 @@ export default function ProjectCards() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Live
+                    {t("projects.livebutton")}
                   </a>
-                  <a
-                    href={project.codeLink}
-                    className="!px-4 !py-2 bg-white/10 text-white rounded hover:opacity-90 border border-white/20"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Code
-                  </a>
+                  {project.codeLink && (
+                    <a
+                      href={project.codeLink}
+                      className="!px-4 !py-2 bg-white/10 text-white rounded hover:opacity-90 border border-white/20"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t("projects.codebutton")}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
