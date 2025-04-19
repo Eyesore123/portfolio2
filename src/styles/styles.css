@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Images, svgs and such */
 
 img,
@@ -761,6 +765,8 @@ main {
 .reveal-visible {
   opacity: 1;
 }
+
+/* Effects */
 
 /* Test */
 
