@@ -856,3 +856,20 @@ main {
 #profilepicreversed {
   transform: rotateY(180deg);
 } */
+
+.frontbanner2 {
+  border: 3px solid;
+  border-image: linear-gradient(to right, #e900ff, #ffc600) 1;
+  animation: rotate-border 5s linear infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-border {
+  0% {
+    border-image: linear-gradient(to right, #e900ff, #5800ff) 1;
+  }
+  100% {
+    border-image: linear-gradient(to right, #e900ff, #5800ff) 1;
+  }
+}

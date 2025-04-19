@@ -6,10 +6,12 @@ import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
 import Layout from './layout/Layout.jsx';
 import NotFound from './components/NotFound.jsx';
+// import ScrollToTop from './components/ScrollToTop.jsx';
 
 export default function App() {
   return (
     <BrowserRouter>
+    {/* <ScrollToTop /> */}
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />

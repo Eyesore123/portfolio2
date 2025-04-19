@@ -19,7 +19,7 @@ export default function ProjectCards() {
   
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:!gap-12 lg:gap-46 xl:gap-16 px-4 !mt-20 !md:mt-0 py-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:!gap-12 lg:gap-46 xl:gap-16 px-4 !mt-0 !md:-mt-0 !py-0">
         {projectData.map((project) => (
           <div key={project.name} className="p-[1px] rounded-xl bg-gradient-to-r from-[#5800ff] to-[#e900ff] w-100 lg:!w-100 xl:!w-160">
             <div className="bg-white/5 backdrop-blur rounded-xl p-6">

@@ -13,27 +13,44 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Combined function to handle both closing the menu and scrolling to top. Basically it overrides the default scroll behavior and scrolls immediately to the top when a link is clicked.
   const handleLinkClick = () => {
+    // Close mobile menu if open
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }
+    
+    requestAnimationFrame(() => {
+
+      document.documentElement.style.scrollBehavior = 'auto';
+      document.body.style.scrollBehavior = 'auto';
+
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      
+      setTimeout(() => {
+        document.documentElement.style.scrollBehavior = '';
+        document.body.style.scrollBehavior = '';
+      }, 0);
+    });
   };
 
   const navLinks = [
     {
-      label: t("navbar.home"), 
+      label: t("navbar.home"),
       path: '/'
     },
     {
-      label: t("navbar.projects"), 
+      label: t("navbar.projects"),
       path: '/projects'
     },
     {
-      label: t("navbar.about"), 
+      label: t("navbar.about"),
       path: '/about'
     },
     {
-      label: t("navbar.contact"), 
+      label: t("navbar.contact"),
       path: '/contact'
     },
   ];
@@ -42,7 +59,7 @@ export default function Navbar() {
     <div className='navbar orange'>
       <div className='blur2 blur3'></div>
       <div className='picture logo'>
-        <Link to='/' className='logolink'>
+        <Link to='/' className='logolink' onClick={handleLinkClick}>
           <img src='/favicon3.png' alt="logo" width={70} className='logo' />
         </Link>
       </div>
@@ -50,8 +67,8 @@ export default function Navbar() {
         <ul className={`nav-links ${isMenuOpen ? 'nav-active' : ''}`}>
           {navLinks.map((link, index) => (
             <li className='nav-link' key={index}>
-              <Link 
-                to={link.path} 
+              <Link
+                to={link.path}
                 onClick={handleLinkClick}
               >
                 {link.label}
@@ -80,8 +97,8 @@ export default function Navbar() {
           ></path>
         </svg>
       </button>
-      <button 
-        className='languagebutton btn scale-125 !mt-1' 
+      <button
+        className='languagebutton btn scale-125 !mt-1'
         onClick={() => changeLanguage(selectedLanguage === 'en' ? 'fi' : 'en')}
       >
         {selectedLanguage === 'en' ? 'FI' : 'EN'}
