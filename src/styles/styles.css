@@ -475,6 +475,7 @@ main {
   gap: var(--size-fluid-6);
   padding: var(--size-fluid-5) var(--size-fluid-2);
   margin-top: 10rem;
+  flex-grow: 1;
 }
 
 /* Styles for buttons, links, cards,, sections, texts  */
