@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
     <section className='flex flex-row justify-center items-center'>
-        <div className='fronttext1 md:!pt-6 md:!pb-0 md:!pl-6 md:!pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
+        <div className='fronttext1 md:!pt-4 md:!pb-0 md:!pl-6 md:!pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
             <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold'>{t("about.header1")}</h2>
             <div className='!pt-12 !pb-22 !pl-0 !pr-0 md:!pl-6 md:!pr-6 w-[100%] flex flex-col justify-center items-center gap-20'>
               <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>{t("about.intro")}</p>
