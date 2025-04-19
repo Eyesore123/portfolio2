@@ -1,13 +1,8 @@
-// Layout.jsx
-import React from 'react';
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="layout-wrapper">
       <Navbar />
-      <main>{children}</main>
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   );
