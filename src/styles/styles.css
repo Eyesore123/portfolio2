@@ -201,6 +201,20 @@ body {
   margin: 20px;
 }
 
+.learning-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin: 20px;
+  padding-bottom: 300px;
+}
+
+@media (max-width: 768px) {
+  .learning-container {
+    gap: 30px;
+  }
+}
+
 .tech-stack-icon {
   display: flex;
   justify-content: center;

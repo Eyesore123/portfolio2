@@ -3,14 +3,15 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next';
 
 const skills = [
-  { name: 'JavaScript', level: 85 },
-  { name: 'TypeScript', level: 60 },
-  { name: 'React', level: 80 },
-  { name: 'Next.js', level: 70 },
-  { name: 'Tailwind CSS', level: 80 },
-  { name: 'Node.js', level: 60 },
-  { name: 'Firebase', level: 65 },
-  { name: 'WordPress', level: 75 },
+  { name: 'JavaScript', level: 85, descriptionKey: 'skills.javascript.description' },
+  { name: 'TypeScript', level: 60, descriptionKey: 'skills.typescript.description' },
+  { name: 'React', level: 80, descriptionKey: 'skills.react.description' },
+  { name: 'Next.js', level: 70, descriptionKey: 'skills.nextjs.description' },
+  { name: 'Tailwind CSS', level: 80, descriptionKey: 'skills.tailwindcss.description' },
+  { name: 'Node.js', level: 65, descriptionKey: 'skills.nodejs.description' },
+  { name: 'Firebase', level: 70, descriptionKey: 'skills.firebase.description' },
+  { name: 'WordPress', level: 75, descriptionKey: 'skills.wordpress.description' },
+  { name: 'Python', level: 30, descriptionKey: 'skills.python.description' },
 ]
 
 export default function SkillsGrid() {
@@ -51,7 +52,7 @@ export default function SkillsGrid() {
   return (
     <section className="!mt-20 px-8 max-w-5xl mx-auto">
       <h2 className="text-3xl font-bold text-center !-mb-10 md:!mb-0 !pl-10 !pr-10 md:!p-2 orange">{t("projects.skillsheader")}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 !-mt-20 md:!mt-14 !pb-50 gap-8 scale-75 md:scale-90">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 !-mt-38 !-mb-50 md:!mt-14 !md:mb-30 gap-8 scale-75 md:scale-90">
         {skills.map((skill) => (
           <div
             key={skill.name}
@@ -71,7 +72,13 @@ export default function SkillsGrid() {
                 transition={{ duration: 1 }}
               />
             </div>
-            <p className="text-right text-sm text-white/60 mt-1">{skill.level}%</p>
+            <div className="flex justify-between items-center mt-1">
+            {/* Description */}
+              {skill.descriptionKey && (
+                <small className="text-sm text-white/60 !mt-3 !mr-4">{t(skill.descriptionKey)}</small>
+              )}
+              <p className="text-right text-sm text-white/60 ml-auto">{skill.level}%</p>
+            </div>
           </div>
         ))}
       </div>

@@ -29,6 +29,7 @@
     "projects.livebutton": "Live",
     "projects.codebutton": "Code",
     "projects.skillsheader": "Honest self-review of coding skills:",
+    "projects.nowlearning": "Now learning:",
     "about.header1": "About Me",
     "about.header2": "From Academia to Administration",
     "about.header3": "Learning by Doing",
@@ -57,7 +58,16 @@
     "navbar.home": "Home",
     "navbar.projects": "Projects",
     "navbar.about": "About",
-    "navbar.contact": "Contact Me"
+    "navbar.contact": "Contact Me",
+    "skills.javascript.description": "Advanced proficiency in ES6+ features and DOM manipulation.",
+    "skills.typescript.description": "Experience with type systems and interfaces. Basic knowledge of generics and type inference.",
+    "skills.react.description": "Proficient with hooks, context API and component lifecycle. Experience with Redux and state management, react npm packages.",
+    "skills.nextjs.description": "Server-side rendering and static site generation. Understanding of routing and API integration.",
+    "skills.tailwindcss.description": "Utility-first CSS framework for rapid UI development. Knowledge of responsive design and quick prototyping.",
+    "skills.nodejs.description": "Backend development with Express, API integration. Capability to create basic RESTful APIs and utilize middleware.",
+    "skills.firebase.description": "Authentication, Firestore and real-time databases. Understanding of cloud functions, triggers, rules and deployment.",
+    "skills.wordpress.description": "Theme development and custom plugin integration. Ability to make changes to styles, themes and backend code.",
+    "skills.python.description": "Basic scripting and automation. Not much experience with Python, but I am learning. Looking forward to it!"
   },
   
   "fi": {
@@ -118,7 +128,16 @@
   "navbar.home": "Etusivu",
   "navbar.projects": "Projektit",
   "navbar.about": "Tietoa minusta",
-  "navbar.contact": "Ota yhteyttä"
+  "navbar.contact": "Ota yhteyttä",
+  "skills.javascript.description": "Edistynyt osaaminen ES6+-ominaisuuksissa ja DOM-manipuloinnissa.",
+  "skills.typescript.description": "Kokemusta tyyppijärjestelmistä ja rajapinnoista. Perustiedot geneerisistä tyypeistä ja tyyppipäätelmästä.",
+  "skills.react.description": "Taitava hookien, context API:n, komponenttien kanssa. Kokemusta npm-paketeista, Reduxista, tilanhallinnasta.",
+  "skills.nextjs.description": "Palvelinpuolen renderöinti ja staattisten sivujen generointi. Ymmärrystä reitityksestä ja API-integraatiosta.",
+  "skills.tailwindcss.description": "Utility-first-tyylinen CSS-kehys nopeaan käyttöliittymäkehitykseen. Responsiivinen suunnittelu ja nopeat prototyypit.",
+  "skills.nodejs.description": "Taustakehitystä Expressillä, API-integraatiot. Kykyä luoda perus-REST-rajapintoja ja hyödyntää middleware-ratkaisuja.",
+  "skills.firebase.description": "Autentikointi, Firestore ja reaaliaikaiset tietokannat. Ymmärrystä pilvitoiminnoista, triggereistä, säännöistä ja käyttöönotosta.",
+  "skills.wordpress.description": "Teemojen kehitys ja mukautettujen lisäosien integrointi. Kyky tehdä muutoksia tyyleihin, teemoihin ja taustakoodiin.",
+  "skills.python.description": "Perusskriptaus ja automaatio. Ei paljon kokemusta Pythonista, mutta olen oppimassa. Odotan innolla uusia projekteja!"
 }
 
 }
