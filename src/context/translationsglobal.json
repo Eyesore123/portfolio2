@@ -67,6 +67,7 @@
     "skills.nodejs.description": "Backend development with Express, API integration. Capability to create basic RESTful APIs and utilize middleware.",
     "skills.firebase.description": "Authentication, Firestore and real-time databases. Understanding of cloud functions, triggers, rules and deployment.",
     "skills.wordpress.description": "Theme development and custom plugin integration. Ability to make changes to styles, themes and backend code.",
+    "skills.git.description": "Proficient in Git and GitHub. Basic understanding of branching, merging, and version control. Scared of merge conflicts.",
     "skills.python.description": "Basic scripting and automation. Not much experience with Python, but I am learning. Looking forward to it!"
   },
   
@@ -137,6 +138,7 @@
   "skills.nodejs.description": "Taustakehitystä Expressillä, API-integraatiot. Kykyä luoda perus-REST-rajapintoja ja hyödyntää middleware-ratkaisuja.",
   "skills.firebase.description": "Autentikointi, Firestore ja reaaliaikaiset tietokannat. Ymmärrystä pilvitoiminnoista, triggereistä, säännöistä ja käyttöönotosta.",
   "skills.wordpress.description": "Teemojen kehitys ja mukautettujen lisäosien integrointi. Kyky tehdä muutoksia tyyleihin, teemoihin ja taustakoodiin.",
+  "skills.git.description": "Git-käyttöönotto, yhteistyö, haarojen ja pull-pyynnön käyttö. Ymmärrystä Git-työnkulusta ja versionhallinnasta. Yhdistämiskonfliktit pelottavat hieman.",
   "skills.python.description": "Perusskriptaus ja automaatio. Ei paljon kokemusta Pythonista, mutta olen oppimassa. Odotan innolla uusia projekteja!"
 }
 

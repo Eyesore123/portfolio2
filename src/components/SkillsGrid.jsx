@@ -11,6 +11,7 @@ const skills = [
   { name: 'Node.js', level: 65, descriptionKey: 'skills.nodejs.description' },
   { name: 'Firebase', level: 70, descriptionKey: 'skills.firebase.description' },
   { name: 'WordPress', level: 75, descriptionKey: 'skills.wordpress.description' },
+  { name: 'Git', level: 70, descriptionKey: 'skills.git.description' },
   { name: 'Python', level: 30, descriptionKey: 'skills.python.description' },
 ]
 
