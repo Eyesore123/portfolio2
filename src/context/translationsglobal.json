@@ -68,7 +68,8 @@
     "skills.firebase.description": "Authentication, Firestore and real-time databases. Understanding of cloud functions, triggers, rules and deployment.",
     "skills.wordpress.description": "Theme development and custom plugin integration. Ability to make changes to styles, themes and backend code.",
     "skills.git.description": "Proficient in Git and GitHub. Basic understanding of branching, merging, and version control. Scared of merge conflicts.",
-    "skills.python.description": "Basic scripting and automation. Not much experience with Python, but I am learning. Looking forward to it!"
+    "skills.python.description": "Basic scripting and automation. I've built a backend API with Python and Flask. Not much experience, but I am learning.",
+    "skills.angular.description": "I built a Quote App project, which helped me to learn components, services, and routing to create a full-featured web app."
   },
   
   "fi": {
@@ -139,7 +140,8 @@
   "skills.firebase.description": "Autentikointi, Firestore ja reaaliaikaiset tietokannat. Ymmärrystä pilvitoiminnoista, triggereistä, säännöistä ja käyttöönotosta.",
   "skills.wordpress.description": "Teemojen kehitys ja mukautettujen lisäosien integrointi. Kyky tehdä muutoksia tyyleihin, teemoihin ja taustakoodiin.",
   "skills.git.description": "Git-käyttöönotto, yhteistyö, haarojen ja pull-pyynnön käyttö. Ymmärrystä Git-työnkulusta ja versionhallinnasta. Yhdistämiskonfliktit pelottavat hieman.",
-  "skills.python.description": "Perusskriptaus ja automaatio. Ei paljon kokemusta Pythonista, mutta olen oppimassa. Odotan innolla uusia projekteja!"
+  "skills.python.description": "Perusskriptaus ja automaatio. Olen tehnyt backend API:n Pythonilla ja Flaskilla. Ei paljon kokemusta, mutta olen oppimassa.",
+  "skills.angular.description": "Tein full stack -sovelluksen (Quote App), jossa opin komponentit, palvelut ja reitityksen."
 }
 
 }

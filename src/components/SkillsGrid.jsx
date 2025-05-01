@@ -12,7 +12,8 @@ const skills = [
   { name: 'Firebase', level: 70, descriptionKey: 'skills.firebase.description' },
   { name: 'WordPress', level: 75, descriptionKey: 'skills.wordpress.description' },
   { name: 'Git', level: 70, descriptionKey: 'skills.git.description' },
-  { name: 'Python', level: 30, descriptionKey: 'skills.python.description' },
+  { name: 'Python', level: 45, descriptionKey: 'skills.python.description' },
+  { name: 'Angular', level: 35, descriptionKey: 'skills.angular.description' },
 ]
 
 export default function SkillsGrid() {
