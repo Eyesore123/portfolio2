@@ -69,7 +69,8 @@
     "skills.wordpress.description": "Theme development and custom plugin integration. Ability to make changes to styles, themes and backend code.",
     "skills.git.description": "Proficient in Git and GitHub. Basic understanding of branching, merging, and version control. Scared of merge conflicts.",
     "skills.python.description": "Basic scripting and automation. I've built a backend API with Python and Flask. Not much experience, but I am learning.",
-    "skills.angular.description": "I built a Quote App project, which helped me to learn components, services, and routing to create a full-featured web app."
+    "skills.angular.description": "I built a Quote App project, which helped me to learn components, services, and routing to create a full-featured web app.",
+    "skills.postgresql.description": "Basic CRUD operations, setting up and querying relational databases both locally and with cloud-hosted Postgres providers..."
   },
   
   "fi": {
@@ -141,7 +142,8 @@
   "skills.wordpress.description": "Teemojen kehitys ja mukautettujen lisäosien integrointi. Kyky tehdä muutoksia tyyleihin, teemoihin ja taustakoodiin.",
   "skills.git.description": "Git-käyttöönotto, yhteistyö, haarojen ja pull-pyynnön käyttö. Ymmärrystä Git-työnkulusta ja versionhallinnasta. Yhdistämiskonfliktit pelottavat hieman.",
   "skills.python.description": "Perusskriptaus ja automaatio. Olen tehnyt backend API:n Pythonilla ja Flaskilla. Ei paljon kokemusta, mutta olen oppimassa.",
-  "skills.angular.description": "Tein full stack -sovelluksen (Quote App), jossa opin komponentit, palvelut ja reitityksen."
+  "skills.angular.description": "Tein full stack -sovelluksen (Quote App), jossa opin komponentit, palvelut ja reitityksen.",
+  "skills.postgresql.description": "Perus CRUD-toiminnot, relaatiotietokantojen määrittäminen ja kyselyt sekä paikallisesti että pilvipalveluissa..."
 }
 
 }

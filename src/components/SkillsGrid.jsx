@@ -14,6 +14,7 @@ const skills = [
   { name: 'Git', level: 70, descriptionKey: 'skills.git.description' },
   { name: 'Python', level: 45, descriptionKey: 'skills.python.description' },
   { name: 'Angular', level: 35, descriptionKey: 'skills.angular.description' },
+  { name: 'PostgreSQL', level: 40, descriptionKey: 'skills.postgresql.description' },
 ]
 
 export default function SkillsGrid() {

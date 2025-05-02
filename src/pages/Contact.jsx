@@ -17,12 +17,21 @@ export default function Contact() {
               <div className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>
               {/* Icons and contact info */}
               <div className='flex flex-col gap-10 md:gap-20'>
+
                 <div className='flex flex-row justify-start items-center gap-10 md:gap-20'>
                 <img src={Phoneicon} className='phoneicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" />+358449627207
                 </div>
                 <div className='flex flex-row justify-start items-center gap-10 md:gap-20'>
                 <img src={Emailicon} className='emailicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" /> joni.putkinen@protonmail.com
                 </div>
+
+                {/* <form id='contact-form' className='flex flex-col gap-10 md:gap-20'>
+                  <input type='text' name='name' placeholder={t("contact.name")} className='nameinputfield' required />
+                  <input type="email" name='email' placeholder={t("contact.email")} className='emailinputfield' required />
+                  <textarea name='message' placeholder={t("contact.message")} className='messageinputfield' required></textarea>
+                  <button type='submit' className='submitbutton'>{t("contact.button")}</button>
+                </form> */}
+
               </div>
               </div>
               
