@@ -206,7 +206,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 70px;
   margin: 20px;
-  padding-bottom: 300px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -892,3 +892,65 @@ main {
     border-image: linear-gradient(to right, #e900ff, #5800ff) 1;
   }
 }
+
+/* Contact form styles */
+
+#status-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#status-message.success {
+  color: green;
+}
+
+#status-message.error {
+  color: red;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+div > input {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #e900ff, #ffc600) 1;
+  border-image-slice: 1;
+  font-size: 16px;
+  text-align: center;
+}
+
+textarea {
+  height: 200px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid white;
+  outline: none;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent;
+}
+
+.input-field::placeholder {
+  color: white;
+}
+
+/* Test */
+

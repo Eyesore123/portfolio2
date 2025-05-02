@@ -4,6 +4,7 @@ import ShowcaseSection from '../components/ShowcaseSection'
 import ProjectCards from '../components/ProjectCards'
 import SkillsGrid from '../components/SkillsGrid'
 import NowWorking from '../components/NowWorking'
+import NowWorkingOn from '../components/NowWorkingOn'
 
 export default function Projects() {
   return (
@@ -12,6 +13,7 @@ export default function Projects() {
     <ProjectCards />
     <SkillsGrid />
     <NowWorking />
+    <NowWorkingOn />
     </>
   )
 }

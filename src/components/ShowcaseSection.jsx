@@ -64,7 +64,7 @@ export default function ShowcaseSection() {
                 <button
                   onClick={() => setActiveIndex(index)}
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg w-40 text-left transition hover:cursor-pointer
-                    ${index === activeIndex ? " text-white/60" : "text-white hover:text-white"}
+                    ${index === activeIndex ? " text-white" : "text-white/60 hover:text-white"}
                   `}
                 >
                   <span

@@ -54,7 +54,12 @@
     "about.future": "Though I started late, I'm not in a rush and I don't think programming is going anywhere despite all the advancements in AI. I'm here for the long game, to keep learning, building and moving forward. I'm excited to see what the future holds and how I can contribute.",
     "about.portfolio": "If you want to see my previous portfolio or learn more about me or the process of learning to code, click here:",
     "contact.header1": "Contact Me",
+    "contact.header2": "Send Me A Message",
     "contact.p1": "Call me or send me an email. I'll get back to you as soon as possible.",
+    "contact.name": "Name",
+    "contact.email": "Email",
+    "contact.message": "Message",
+    "contact.button": "Send",
     "navbar.home": "Home",
     "navbar.projects": "Projects",
     "navbar.about": "About",
@@ -70,7 +75,12 @@
     "skills.git.description": "Proficient in Git and GitHub. Basic understanding of branching, merging, and version control. Scared of merge conflicts.",
     "skills.python.description": "Basic scripting and automation. I've built a backend API with Python and Flask. Not much experience, but I am learning.",
     "skills.angular.description": "I built a Quote App project, which helped me to learn components, services, and routing to create a full-featured web app.",
-    "skills.postgresql.description": "Basic CRUD operations, setting up and querying relational databases both locally and with cloud-hosted Postgres providers..."
+    "skills.postgresql.description": "Basic CRUD operations, setting up and querying relational databases both locally and with cloud-hosted Postgres providers...",
+    "nowworkingon.header": "Now working on",
+    "nowworkingon.projectTitle": "Fullstack blog app",
+    "nowworkingon.description": "A fullstack blog app with user authentication, CRUD operations, and a RESTful API. Built with React, Laravel, Inertia and PostgreSQL.",
+    "nowworkingon.eta": "Planned release: Summer 2025",
+    "nowworkingon.button": "View Project"
   },
   
   "fi": {
@@ -127,7 +137,12 @@
   "about.future": "Vaikka aloitin koodauksen melko myöhäisellä iällä, en aio pitää kiirettä. Ohjelmointi ei ole katoamassa tekoälyn myötä. Keskityn siihen, mikä on tärkeää pitkällä aikavälillä: oppiminen, uusien asioiden rakentaminen ja kehittyminen. Odotan innolla, että mitä tulevaisuus tuo tullessaan, mitä uusia taitoja voin oppia ja kuinka voin auttaa muita koodaustaidoillani.",
   "about.portfolio": "Jos haluat nähdä aiemman portfolioni tai lukea lisää minusta ja oppimisprosessistani, klikkaa tästä:",
   "contact.header1": "Ota yhteyttä",
+  "contact.header2": "Lähetä viesti",
   "contact.p1": "Soita tai lähetä sähköpostia. Vastaan sinulle mahdollisimman pian.",
+  "contact.name": "Nimi",
+  "contact.email": "Sähköposti",
+  "contact.message": "Viesti",
+  "contact.button": "Lähetä",
   "navbar.home": "Etusivu",
   "navbar.projects": "Projektit",
   "navbar.about": "Tietoa minusta",
@@ -143,7 +158,12 @@
   "skills.git.description": "Git-käyttöönotto, yhteistyö, haarojen ja pull-pyynnön käyttö. Ymmärrystä Git-työnkulusta ja versionhallinnasta. Yhdistämiskonfliktit pelottavat hieman.",
   "skills.python.description": "Perusskriptaus ja automaatio. Olen tehnyt backend API:n Pythonilla ja Flaskilla. Ei paljon kokemusta, mutta olen oppimassa.",
   "skills.angular.description": "Tein full stack -sovelluksen (Quote App), jossa opin komponentit, palvelut ja reitityksen.",
-  "skills.postgresql.description": "Perus CRUD-toiminnot, relaatiotietokantojen määrittäminen ja kyselyt sekä paikallisesti että pilvipalveluissa..."
+  "skills.postgresql.description": "Perus CRUD-toiminnot, relaatiotietokantojen määrittäminen ja kyselyt sekä paikallisesti että pilvipalveluissa...",
+  "nowworkingon.header": "Työn alla nyt",
+"nowworkingon.projectTitle": "Fullstack-blogisovellus",
+"nowworkingon.description": "Fullstack-blogisovellus, jossa on käyttäjien todennus, CRUD-toiminnot ja RESTful API. Rakennettu Reactilla, Laravelilla, Inertialla ja PostgreSQL:llä.",
+"nowworkingon.eta": "Suunniteltu julkaisu: Kesä 2025",
+"nowworkingon.button": "Katso projekti"
 }
 
 }
