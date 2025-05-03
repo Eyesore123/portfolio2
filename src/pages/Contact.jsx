@@ -2,7 +2,7 @@ import React from 'react'
 import Phoneicon from '../assets/Phone.svg';
 import Emailicon from '../assets/Envelope.svg';
 import '../styles/styles.css'
-// import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/ContactForm';
 import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
@@ -26,7 +26,7 @@ export default function Contact() {
                 <div className='flex flex-row justify-start items-center gap-10 md:gap-20'>
                 <img src={Emailicon} className='emailicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" /> joni.putkinen@protonmail.com
                 </div>
-              {/* <ContactForm/> */}
+              <ContactForm/>
               </div>
               </div>
               
