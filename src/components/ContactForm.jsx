@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/styles.css';
 import { useTranslation } from 'react-i18next';
 
 export default function ContactForm() {
@@ -91,7 +90,18 @@ export default function ContactForm() {
         ></textarea>
 
         {loading ? (
-          <div style={{ width: '30px', height: '30px', border: '4px solid transparent', marginTop: '20px', borderTop: '4px solid', borderRadius: '50%', animation: 'spin 1s linear infinite', borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1' }} />
+          <div
+            style={{
+              width: '30px',
+              height: '30px',
+              border: '4px solid transparent',
+              marginTop: '20px',
+              borderTop: '4px solid',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite',
+              borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1',
+            }}
+          />
         ) : (
           <button type="submit" className="submitbutton btn btn-primary !mt-6">
             {t('contact.button')}
@@ -104,6 +114,15 @@ export default function ContactForm() {
           {statusMessage}
         </p>
       )}
+
+      <style>
+        {`
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}
+      </style>
     </div>
   );
 }
