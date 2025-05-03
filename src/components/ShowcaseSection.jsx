@@ -57,7 +57,7 @@ export default function ShowcaseSection() {
         </h2> */}
         <div className='md:w-7/9 flex flex-col md:flex-row gap-20 md:gap-34 items-center'>
 
-          <div className="w-full scale-90 md:scale-100 md:!mb-30 !md:mb-0 md:w-1/4 flex flex-col gap-18">
+          <div className="w-full scale-90 md:scale-100 md:!mb-30 !md:mb-0 md:w-1/4 flex flex-col gap-12">
             <h2 className="text-yellow-400 text-xl font-semibold mb-2 !text-left">{t("projects.header1")}</h2>
             {projectData.map((project, index) => (
               <div key={project.name}>

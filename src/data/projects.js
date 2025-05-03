@@ -37,22 +37,6 @@ const projectData = [
         duration: 65,
     },
     {
-        id: 3,
-        name: 'Laatumarjat.fi',
-        video: "/videos/laatumarjat_ready.mp4",
-        image: "/images/Laatumarjat.png",
-        descriptionKey: "projects.card3text",
-        description: "A website made with WordPress, for the purpose of selling berries. Responsive layout. Contact form. Theme: Astra. ",
-        stack: [
-            { label: "Wordpress", icon: "/wordpress-plain-wordmark.svg" },
-            { label: "PHP", icon: "/php-original.svg" },
-        ],
-        liveLink: "https://laatumarjat.fi",
-        codeLink: "",
-        currentTime: 0,
-        duration: 26,
-    },
-    {
         id: 4,
         name: 'Snake Game',
         video: "/videos/snakegame_ready.mp4",
@@ -66,6 +50,42 @@ const projectData = [
         codeLink: "https://github.com/Eyesore123/Snake-game-JS-only",
         currentTime: 0,
         duration: 57,
+    },
+
+    {
+        id: 3,
+        name: 'Quote App',
+        video: "/videos/quoteapp.mp4",
+        image: "/images/quoteapp.png",
+        descriptionKey: "projects.card5text",
+        description: "A quote app made with Angular and Python (+ Flask). Includes quote fetching, email subscriptions, scheduled sending of quotes, pagination and search of quotes. A fully operational backend with a database.",
+        stack: [
+            { label: "Angular", icon: "/angular.svg" },
+            { label: "Python", icon: "/python.svg" },
+            { label: "Flask", icon: "/flask2.png" },
+            { label: "PostgreSQL", icon: "/postgres.svg" },
+        ],
+        liveLink: "https://myquoteapp1.netlify.app/",
+        codeLink: "https://github.com/Eyesore123/quote-generator",
+        currentTime: 0,
+        duration: 77,
+        
+    },
+    {
+        id: 5,
+        name: 'Laatumarjat.fi',
+        video: "/videos/laatumarjat_ready.mp4",
+        image: "/images/Laatumarjat.png",
+        descriptionKey: "projects.card3text",
+        description: "A website made with WordPress, for the purpose of selling berries. Responsive layout. Contact form. Theme: Astra. ",
+        stack: [
+            { label: "Wordpress", icon: "/wordpress-plain-wordmark.svg" },
+            { label: "PHP", icon: "/php-original.svg" },
+        ],
+        liveLink: "https://laatumarjat.fi",
+        codeLink: "",
+        currentTime: 0,
+        duration: 26,
     }
 ]
 
