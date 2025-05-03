@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className='w-40 md:w-full col-span-2 flex justify-center items-center 2xl:items-start 2xl:justify-start'>
             <div className='flip-card'>
-              <div className='flip-card-inner' style={{ position: 'relative', width: '400px', height: '400px' }}>
+              {/* <div className='flip-card-inner' style={{ position: 'relative', width: '400px', height: '400px' }}> */}
                 {!imageLoaded && (
                   <div style={{
                     width: '100%',
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </section>
       <FrontBanner />
       <FrontText1 />
