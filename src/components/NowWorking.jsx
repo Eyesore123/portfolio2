@@ -14,13 +14,13 @@ export default function NowWorking() {
         </div>
         <div className="learning-container">
             <div className="tech-stack-icon">
-            <a href='https://www.python.org/' target='_blank' rel='noopener noreferrer' className="hover:opacity-80">
-                <img src='/python.svg' alt="Python" />
+            <a href='https://laravel.com/' target='_blank' rel='noopener noreferrer' className="hover:opacity-80">
+                <img src='/laravel.svg' alt="Laravel" />
             </a>
             </div>
             <div className="tech-stack-icon">
-            <a href='https://angular.dev/overview' target='_blank' rel='noopener noreferrer' className="hover:opacity-80">
-                <img src='/angular.svg' alt="Angular.js" />
+            <a href='https://react.dev/' target='_blank' rel='noopener noreferrer' className="hover:opacity-80">
+                <img src='/react-original.svg' alt="React" />
             </a>
             </div>
             <div className="tech-stack-icon">

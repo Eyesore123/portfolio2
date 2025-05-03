@@ -81,7 +81,16 @@
     "nowworkingon.projectTitle": "Fullstack blog app",
     "nowworkingon.description": "A fullstack blog app with user authentication, CRUD operations, and a RESTful API. Built with React, Laravel, Inertia and PostgreSQL.",
     "nowworkingon.eta": "Planned release: Summer 2025",
-    "nowworkingon.button": "View Project"
+    "nowworkingon.button": "View Project",
+    "skillsfocus.header": "Skills Focus",
+  "skillsfocus.strengthstitle": "My Strengths",
+  "skillsfocus.strengths1": "Strong problem-solving and analytical thinking",
+  "skillsfocus.strengths2": "Excellent communication and teamwork skills",
+  "skillsfocus.strengths3": "Adaptable and quick to learn new technologies",
+  "skillsfocus.improvingtitle": "Currently Improving",
+  "skillsfocus.improving1": "Advanced front-end frameworks and libraries",
+  "skillsfocus.improving2": "Backend development and database management",
+  "skillsfocus.improving3": "Optimizing performance and accessibility"
   },
   
   "fi": {
@@ -165,7 +174,16 @@
 "nowworkingon.projectTitle": "Fullstack-blogisovellus",
 "nowworkingon.description": "Fullstack-blogisovellus, jossa on käyttäjien todennus, CRUD-toiminnot ja RESTful API. Rakennettu Reactilla, Laravelilla, Inertialla ja PostgreSQL:llä.",
 "nowworkingon.eta": "Suunniteltu julkaisu: Kesä 2025",
-"nowworkingon.button": "Katso projekti"
+"nowworkingon.button": "Katso projekti",
+"skillsfocus.header": "Osaamisen painopisteet",
+  "skillsfocus.strengthstitle": "Vahvuuteni",
+  "skillsfocus.strengths1": "Vahvat ongelmanratkaisu- ja analysointitaidot",
+  "skillsfocus.strengths2": "Erinomaiset viestintä- ja tiimityötaidot",
+  "skillsfocus.strengths3": "Sopeutuva ja nopea omaksumaan uusia teknologioita",
+  "skillsfocus.improvingtitle": "Tällä hetkellä kehitän",
+  "skillsfocus.improving1": "Edistyneet front-end-kehykset ja kirjastot",
+  "skillsfocus.improving2": "Backend-kehitys ja tietokantojen hallinta",
+  "skillsfocus.improving3": "Suorituskyvyn ja saavutettavuuden optimointi"
 }
 
 }

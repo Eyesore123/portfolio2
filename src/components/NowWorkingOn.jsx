@@ -8,11 +8,12 @@ export default function NowWorkingOn() {
 
   return (
     <section className='flex flex-row justify-center items-center !pt-0 !mt-0'>
-        <div className='!mt-10 !pb-22 !mb-20 !pl-6 !pr-6 w-[60%] flex flex-col justify-center items-center text-center'>
+        <div className='!mt-10 !pb-12 !mb-0 !pl-6 !pr-6 w-[60%] flex flex-col justify-center items-center text-center'>
 
             <h2 className='gradienttext text-2xl !mb-14'>{t("nowworkingon.header")}:</h2>
 
-            <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !p-6 shadow-[0_0_20px_rgba(233,0,255,0.4)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
+            <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !px-8 !py-10 shadow-[0_0_20px_rgba(233,0,255,0.4)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
+
                 <p className='text-[var(--text-color2)] text-xl font-bold tracking-wide mb-3 text-shadow'>
                     {t("nowworkingon.projectTitle")}
                 </p>
