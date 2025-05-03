@@ -85,7 +85,7 @@ export default function ContactForm() {
       </form>
 
       {statusMessage && (
-        <p id="status-message" className='text-center mt-4'>{statusMessage}</p>
+        <p id="status-message" className='text-center !mt-6'>{statusMessage}</p>
       )}
     </div>
   )
