@@ -9,7 +9,7 @@ export default function NowWorking() {
   return (
     <>
     <section className='flex flex-row justify-center items-center !md:mt-10'>
-        <div className='md:!mt-50 !pb-22 !pl-6 !pr-6 w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
+        <div className='!-mt-20 md:!mt-50 !pb-22 !pl-6 !pr-6 w-[60%] lg:max-w-[60%] flex flex-row justify-center items-center'>
         <h2 className='gradienttext flex flex-row justify-center items-center'>{t("projects.nowlearning")}</h2>
         </div>
         <div className="learning-container">

@@ -54,7 +54,7 @@ export default function SkillsGrid() {
 
   return (
     <section className="!mt-20 px-8 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold text-center !-mb-10 md:!mb-0 !pl-10 !pr-10 md:!p-2 orange">{t("projects.skillsheader")}</h2>
+      <h2 className="text-3xl font-bold text-center !-mb-40 md:!mb-0 !pl-10 !pr-10 md:!p-2 orange">{t("projects.skillsheader")}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 !-mt-38 !-mb-50 md:!mt-14 !md:mb-30 gap-8 scale-75 md:scale-90">
         {skills.map((skill) => (
           <div

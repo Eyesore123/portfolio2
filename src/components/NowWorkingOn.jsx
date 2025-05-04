@@ -8,7 +8,7 @@ export default function NowWorkingOn() {
 
   return (
     <section className='flex flex-row justify-center items-center !pt-0 !mt-0'>
-        <div className='!mt-10 !pb-12 !mb-0 !pl-6 !pr-6 w-[60%] flex flex-col justify-center items-center text-center'>
+        <div className='!mt-10 !pb-12 !mb-0 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
 
             <h2 className='gradienttext text-2xl !mb-14'>{t("nowworkingon.header")}:</h2>
 

@@ -81,7 +81,7 @@ export default function SkillsFocus() {
                 transform: translateY(0);
               }
               50% {
-                transform: translateY(-3px);
+                transform: translateY(-4px);
               }
               100% {
                 transform: translateY(0);
@@ -89,7 +89,7 @@ export default function SkillsFocus() {
             }
 
             .animate-border-glitch {
-              animation: border-glitch 0.5s infinite ease-in-out;
+              animation: border-glitch 2s infinite ease-in-out;
               border-image-slice: 1;
               border-width: 3px;
             }
