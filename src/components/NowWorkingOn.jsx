@@ -6,6 +6,22 @@ export default function NowWorkingOn() {
 
     const { t } = useTranslation();
 
+    const handleImageClick = (event) => {
+        const img = event.target;
+       if (document.fullscreenElement === img) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        } else {
+            if (img.requestFullscreen) {
+                img.requestFullscreen();
+            } else if (img.webkitRequestFullscreen) {
+                img.webkitRequestFullscreen();
+            } else if (img.msRequestFullscreen) {
+            }
+        }
+    };
+
   return (
     <section className='flex flex-row justify-center items-center !pt-0 !mt-0'>
         <div className='!mt-10 !pb-12 !mb-0 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
@@ -23,6 +39,7 @@ export default function NowWorkingOn() {
                 <p className='text-[var(--text-color3)] text-sm italic tracking-tight text-shadow'>
                     {t("nowworkingon.eta")}
                 </p>
+                <img src='/blog.png' alt="Blog" className='w-full object-scale-down rounded !mb-2 !h-80 hover:cursor-pointer' onClick={(event) => handleImageClick(event)} />
 
                 <style jsx>{`
                     @keyframes border-glitch {
