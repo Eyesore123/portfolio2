@@ -7,11 +7,11 @@ export default function SkillsFocus() {
 
   return (
     <section className='flex flex-row justify-center items-center !pt-0 !mt-0'>
-      <div className='!mt-10 !pb-22 !mb-20 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
+      <div className='!mt-10 !pb-30 !mb-20 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
 
         <h2 className='gradienttext text-2xl !mb-14'>{t('skillsfocus.header')}</h2>
 
-        <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !p-6 shadow-[0_0_20px_rgba(233,0,255,0.10)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
+        <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !p-6 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
 
           <h5 className='text-[var(--text-color2)] text-xl font-bold tracking-wide !mb-10 !mt-10'>
             {t('skillsfocus.strengthstitle')}
@@ -49,7 +49,7 @@ export default function SkillsFocus() {
             </li>
           </ul>
 
-          <style jsx>{`
+          <style>{`
             @keyframes border-glitch {
               0% { border-image-source: linear-gradient(45deg, #5800ff, #e900ff); }
               25% { border-image-source: linear-gradient(135deg, #5800ff, #e900ff); }
@@ -103,7 +103,7 @@ export default function SkillsFocus() {
             }
 
             .text-shadow {
-              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10), 0 0 10px rgba(233, 0, 255, 1);
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(233, 0, 255, 1);
             }
           `}</style>
 

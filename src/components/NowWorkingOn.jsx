@@ -28,7 +28,7 @@ export default function NowWorkingOn() {
 
             <h2 className='gradienttext text-2xl !mb-14'>{t("nowworkingon.header")}:</h2>
 
-            <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !px-8 !py-10 shadow-[0_0_20px_rgba(233,0,255,0.4)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
+            <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !px-8 !py-10 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
 
                 <p className='text-[var(--text-color2)] text-xl font-bold tracking-wide mb-3 text-shadow'>
                     {t("nowworkingon.projectTitle")}
@@ -41,7 +41,7 @@ export default function NowWorkingOn() {
                 </p>
                 <img src='/blog.png' alt="Blog" className='w-full object-scale-down rounded !mb-2 !h-80 hover:cursor-pointer' onClick={(event) => handleImageClick(event)} />
 
-                <style jsx>{`
+                <style>{`
                     @keyframes border-glitch {
                     0% { border-image-source: linear-gradient(45deg, #5800ff, #e900ff); }
                     25% { border-image-source: linear-gradient(135deg, #5800ff, #e900ff); }
@@ -57,7 +57,7 @@ export default function NowWorkingOn() {
                     }
 
                     .text-shadow {
-                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(233, 0, 255, 1);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(233, 0, 255, 1);
                     }
                 `}</style>
             </div>
