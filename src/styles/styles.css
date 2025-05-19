@@ -35,6 +35,13 @@ svg {
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 /* Root styles for variables */
 
 :root {
