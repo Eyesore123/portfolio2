@@ -94,7 +94,8 @@
   "latestblog": {
     "header": "Latest Blog Post",
     "published": "Published on",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "linktext": "From Joni's blog:"
   }
   },
   
@@ -192,7 +193,8 @@
   "latestblog": {
     "header": "Uusin blogipostaus",
     "published": "Julkaistu",
-    "loading": "Ladataan..."
+    "loading": "Ladataan...",
+    "linktext":"Jonin blogista:"
   }
 }
 
