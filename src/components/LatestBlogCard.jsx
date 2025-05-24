@@ -15,7 +15,7 @@ export default function LatestBlogCard() {
   };
 
   useEffect(() => {
-    fetch('https://blog-app-production-16c2.up.railway.app/latest-post')
+    fetch('https://blog-app-production-16c2.up.railway.app/api/latest-post')
       .then(res => {
         if (!res.ok) {
           throw new Error('Failed to fetch');
