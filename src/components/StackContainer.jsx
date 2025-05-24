@@ -55,8 +55,8 @@ export default function StackContainer() {
         </a>
       </div>
       <div className="tech-stack-icon">
-        <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
-          <img src="/supabase-plain-wordmark.svg" style={{ filter: 'invert(1)' }} alt="Supabase" />
+        <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+          <img src="/postgres.svg" alt="PostgreSQL" />
         </a>
       </div>
       <div className="tech-stack-icon">
