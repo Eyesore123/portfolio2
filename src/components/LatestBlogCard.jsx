@@ -11,8 +11,7 @@ export default function LatestBlogCard() {
   const fallbackPost = {
     title: "Welcome to my blog!",
     excerpt: "Check out my latest thoughts and tutorials on web development.",
-    url: "https://your-blog-url.com", // Replace with your actual blog URL
-    publishedAt: new Date().toLocaleDateString()
+    url: "https://blog-app-production-16c2.up.railway.app/", // Replace with your actual blog URL
   };
 
   useEffect(() => {
@@ -56,16 +55,13 @@ export default function LatestBlogCard() {
             rel='noopener noreferrer' 
             className='bg-gray-900 text-white !p-4 rounded-xl shadow-lg w-full max-w-md hover:bg-gray-800 transition-colors'
           >
-            <p className='text-lg !mb-2 font-semibold'>{displayPost.title}</p>
+            <p className='text-lg !mb-2 !mt-4 font-semibold'>{displayPost.title}</p>
             <p className='text-sm text-gray-300'>{displayPost.excerpt}</p>
-            <p className='text-xs text-gray-500 !mt-2 italic'>
-              {t("latestblog.published")} {displayPost.publishedAt}
-            </p>
-            {error && (
+            {/* {error && (
               <p className='text-xs text-yellow-400 !mt-1'>
                 (Showing fallback content)
               </p>
-            )}
+            )} */}
           </a>
         )}
         
