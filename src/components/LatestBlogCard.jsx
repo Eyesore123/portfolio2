@@ -8,7 +8,7 @@ export default function LatestBlogCard() {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch('https://yourblogapi.com/api/latest')
+    fetch('https://blog-app-production-16c2.up.railway.app/latest-post')
       .then(res => res.json())
       .then(data => setPost(data))
       .catch(err => console.error(err));

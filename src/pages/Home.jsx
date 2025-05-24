@@ -5,6 +5,7 @@ import FrontText2 from '../components/FrontText2';
 import TechStack from '../components/TechStack';
 import Githubandcvs from '../components/Githubandcvs';
 import TransitionCard from '../components/TransitionCard';
+import LatestBlogCard from '../components/LatestBlogCard';
 import { useTranslation } from 'react-i18next';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -104,6 +105,7 @@ export default function Home() {
         {/* </div> */}
       </section>
       <FrontBanner />
+      <LatestBlogCard />
       <FrontText1 />
       <TechStack />
       <FrontText2 />
