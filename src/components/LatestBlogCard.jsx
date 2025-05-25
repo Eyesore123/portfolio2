@@ -52,14 +52,20 @@ export default function LatestBlogCard() {
         {/* Image below the link */}
         {displayPost && (
           <div className='!mt-4 !p-1 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full'>
-            <img
-              src={displayPost.imageUrl || "/fallbackimage.jpg"}
-              alt="Blog post thumbnail"
-              className='w-[80px] h-[80px] object-cover rounded-full hover:cursor-pointer'
-              onError={(e) => {
-                e.target.src = "/fallbackimage.jpg";
-              }}
-            />
+            <a
+              href="https://blog-app-production-16c2.up.railway.app/"
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <img
+                src={displayPost.imageUrl || "/fallbackimage.jpg"}
+                alt="Blog post thumbnail"
+                className='w-[150px] h-[150px] object-cover rounded-full hover:cursor-pointer'
+                onError={(e) => {
+                  e.target.src = "/fallbackimage.jpg";
+                }}
+              />
+            </a>
           </div>
         )}
 
@@ -68,12 +74,12 @@ export default function LatestBlogCard() {
         )}
         
         {displayPost && !loading && (
-          <div className='flex flex-col items-center !mt-10'>
+          <div className='flex flex-col items-center !mt-14'>
             <a
               href={displayPost.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='bg-gray-900 text-white !p-4 rounded-xl shadow-lg w-full max-w-md hover:bg-gray-800 transition-colors cursor-pointer'
+              className='bg-gray-900 text-white !p-10 rounded-xl shadow-lg w-full max-w-md hover:bg-gray-800 transition-colors cursor-pointer'
             >
               <p className='text-lg !mb-4 !mt-4 font-semibold'>{displayPost.title}</p>
               <p className='text-sm text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
