@@ -11,7 +11,8 @@ export default function LatestBlogCard() {
   const fallbackPost = {
     title: "Welcome to my blog!",
     excerpt: "Check out my latest thoughts and tutorials on web development.",
-    url: "https://blog-app-production-16c2.up.railway.app/", // Replace with your actual blog URL
+    url: "https://blog-app-production-16c2.up.railway.app/",
+    imageUrl: "/fallbackimage.jpg" // Fallback image
   };
 
   useEffect(() => {
@@ -40,32 +41,51 @@ export default function LatestBlogCard() {
 
   return (
     <section className='flex flex-row justify-center items-center'>
-      <div className='!mt-14 !pb-10 !pl-6 !pr-6 w-[60%] lg:max-w-[60%] flex flex-col justify-center items-center text-center'>
+      <div className='!mt-14 !pl-6 !pr-6 w-[60%] lg:max-w-[60%] flex flex-col justify-center items-center text-center'>
         
         <h2 className='gradienttext text-2xl !mb-4'>{t("latestblog.header")}</h2>
+        
         <p className='text-xs !mt-3 !mb-10 font-bold bg-gradient-to-r from-pink-500 to-yellow-400 bg-clip-text text-transparent cursor-pointer'>
-              {t("latestblog.linktext")}
-            </p>
+          {t("latestblog.linktext")}
+        </p>
+
+        {/* Image below the link */}
+        {displayPost && (
+          <div className='!mt-4 !p-1 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full'>
+            <img
+              src={displayPost.imageUrl || "/fallbackimage.jpg"}
+              alt="Blog post thumbnail"
+              className='w-[80px] h-[80px] object-cover rounded-full hover:cursor-pointer'
+              onError={(e) => {
+                e.target.src = "/fallbackimage.jpg";
+              }}
+            />
+          </div>
+        )}
+
         {loading && (
           <p className='text-gray-500 text-sm italic'>{t("latestblog.loading")}</p>
         )}
         
         {displayPost && !loading && (
-          <a
-            href={displayPost.url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='bg-gray-900 text-white !p-4 rounded-xl shadow-lg w-full max-w-md hover:bg-gray-800 transition-colors cursor-pointer'
-          >
-            <p className='text-lg !mb-4 !mt-4 font-semibold'>{displayPost.title}</p>
-            <p className='text-sm text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
-          </a>
+          <div className='flex flex-col items-center !mt-10'>
+            <a
+              href={displayPost.url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='bg-gray-900 text-white !p-4 rounded-xl shadow-lg w-full max-w-md hover:bg-gray-800 transition-colors cursor-pointer'
+            >
+              <p className='text-lg !mb-4 !mt-4 font-semibold'>{displayPost.title}</p>
+              <p className='text-sm text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
+            </a>
+          </div>
         )}
+        
         {error && (
-              <p className='text-xs text-yellow-400 mt-1'>
-                (Showing fallback content)
-              </p>
-            )}
+          <p className='text-xs text-yellow-400 !mt-1'>
+            (Showing fallback content)
+          </p>
+        )}
         
       </div>
     </section>
