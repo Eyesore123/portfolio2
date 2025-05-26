@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://blog-app-production-16c2.up.railway.app; connect-src 'self' https://blog-app-production-16c2.up.railway.app; img-src 'self' https://blog-app-production-16c2.up.railway.app; object-src 'none'; frame-src 'none'; upgrade-insecure-requests"
+    X-Content-Type-Options = "nosniff"
