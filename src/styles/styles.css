@@ -944,7 +944,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* Test, invisible h1 for seo */
 
-/* .invisible {
+.invisible {
   position: absolute;
   top: -1000px;
   left: -1000px;
@@ -957,4 +957,4 @@ input:focus::placeholder, textarea:focus::placeholder {
   border: 0;
   padding: 0;
   margin: 0;
-} */
+}
