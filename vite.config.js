@@ -6,11 +6,6 @@ export default defineConfig({
     tailwindcss(),
   ],
   build: {
-    copy: [
-      {
-        src: 'robots.txt',
-        dest: 'build',
-      },
-    ],
+    outDir: 'dist',
   },
 })
