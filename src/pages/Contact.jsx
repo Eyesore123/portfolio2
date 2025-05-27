@@ -1,6 +1,4 @@
 import React from 'react'
-import Phoneicon from '../assets/Phone.svg';
-import Emailicon from '../assets/Envelope.svg';
 import '../styles/styles.css'
 import ContactForm from '../components/ContactForm';
 import { useTranslation } from 'react-i18next';
@@ -20,11 +18,11 @@ export default function Contact() {
               {/* Icons and contact info */}
               <div className='flex flex-col gap-10 md:gap-20'>
 
-                <div className='flex flex-row justify-start items-center gap-10 md:gap-20'>
-                <img src={Phoneicon} className='phoneicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" />+358449627207
+                <div className='flex flex-row justify-start items-center gap-10 md:gap-20 lg:!ml-10'>
+                <img src='/Phone.svg' className='phoneicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" />+358449627207
                 </div>
-                <div className='flex flex-row justify-start items-center gap-10 md:gap-20'>
-                <img src={Emailicon} className='emailicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" /> joni.putkinen@protonmail.com
+                <div className='flex flex-row justify-start items-center gap-10 md:gap-20 lg:!ml-10'>
+                <img src='/Envelope.svg' className='emailicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" /> joni.putkinen@protonmail.com
                 </div>
               <ContactForm/>
               </div>
