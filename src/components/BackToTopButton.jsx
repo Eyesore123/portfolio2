@@ -29,12 +29,12 @@ export default function BackToTopButton() {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className={`
-        fixed bottom-4 md:bottom-6 right-3 md:right-6 !z-50 flex items-center
-        !bg-pink-500 !text-white !rounded-md !shadow-lg
+        fixed btn-primary bottom-4 md:bottom-6 right-3 md:right-6 !z-50 flex items-center
+        !bg-[#e900ff] !text-white !rounded-md !shadow-lg
         ${hovered ? '!px-3 md:!px-4 !justify-start' : '!px-0 md:!px-0 !justify-center'} !py-2 md:!py-3
         ${hovered ? 'w-[170px] md:w-[200px]' : 'w-[50px] md:w-[70px]'} overflow-hidden
         transition-all duration-300
-        hover:!bg-pink-600
+        hover:opacity-80
         !cursor-pointer
         !select-none
       `}
