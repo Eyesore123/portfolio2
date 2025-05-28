@@ -91,6 +91,7 @@
   "skillsfocus.improving1": "Advanced front-end frameworks and libraries",
   "skillsfocus.improving2": "Backend development and database management",
   "skillsfocus.improving3": "Optimizing performance and accessibility",
+  "backToTop": "Start of the page",
   "latestblog": {
     "header": "Latest Blog Post",
     "published": "Published on",
@@ -190,6 +191,7 @@
   "skillsfocus.improving1": "Edistyneet front-end-kehykset ja kirjastot",
   "skillsfocus.improving2": "Backend-kehitys ja tietokantojen hallinta",
   "skillsfocus.improving3": "Suorituskyvyn ja saavutettavuuden optimointi",
+   "backToTop": "Sivun alkuun",
   "latestblog": {
     "header": "Uusin blogipostaus",
     "published": "Julkaistu",

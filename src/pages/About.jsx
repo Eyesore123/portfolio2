@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+import BackToTopButton from '../components/BackToTopButton';
 
 export default function About() {
   const { t } = useTranslation();
@@ -55,6 +56,7 @@ export default function About() {
               </button>
           </div>
         </div>
+        <BackToTopButton/>
     </section>
     </>
   )

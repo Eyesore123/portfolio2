@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/styles.css'
 import ContactForm from '../components/ContactForm';
+import BackToTopButton from '../components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
@@ -30,6 +31,7 @@ export default function Contact() {
               
           </div>
         </div>
+        <BackToTopButton/>
     </section>
     </>
   )

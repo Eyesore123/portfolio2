@@ -6,6 +6,7 @@ import TechStack from '../components/TechStack';
 import Githubandcvs from '../components/Githubandcvs';
 import TransitionCard from '../components/TransitionCard';
 import LatestBlogCard from '../components/LatestBlogCard';
+import BackToTopButton from '../components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -111,6 +112,7 @@ export default function Home() {
       <FrontText2 />
       <Githubandcvs />
       <TransitionCard />
+      <BackToTopButton />
 
       <style>
         {`

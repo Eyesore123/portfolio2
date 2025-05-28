@@ -6,6 +6,7 @@ import SkillsGrid from '../components/SkillsGrid'
 import NowWorking from '../components/NowWorking'
 import NowWorkingOn from '../components/NowWorkingOn'
 import SkillsFocus from '../components/SkillsFocus'
+import BackToTopButton from '../components/BackToTopButton'
 
 export default function Projects() {
   return (
@@ -16,6 +17,7 @@ export default function Projects() {
     <NowWorking />
     <NowWorkingOn />
     <SkillsFocus />
+    <BackToTopButton />
     </>
   )
 }
