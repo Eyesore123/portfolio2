@@ -41,11 +41,11 @@ export default function LatestBlogCard() {
 
   return (
     <section className='flex flex-row justify-center items-center'>
-      <div className='!mt-14 !pl-6 !pr-6 w-[60%] lg:max-w-[60%] flex flex-col justify-center items-center text-center'>
+      <div className='!mt-14 !pl-6 !pr-6 !w-full flex flex-col justify-center items-center text-center'>
         
         <h2 className='gradienttext text-2xl !mb-4'>{t("latestblog.header")}</h2>
         
-        <p className='text-xs !mt-3 !mb-10 font-bold bg-gradient-to-r from-pink-500 to-yellow-400 bg-clip-text text-transparent cursor-pointer'>
+        <p className='text-xs !mt-3 !mb-8 font-bold bg-gradient-to-r from-pink-500 to-yellow-400 bg-clip-text text-transparent cursor-pointer'>
           {t("latestblog.linktext")}
         </p>
 
@@ -79,9 +79,9 @@ export default function LatestBlogCard() {
               href={displayPost.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='bg-gray-900 text-white !p-10 rounded-xl shadow-lg w-full max-w-md hover:bg-gray-800 transition-colors cursor-pointer'
+              className='bg-gray-900 text-white lg:!p-10 rounded-xl shadow-lg lg:!max-w-lg hover:bg-gray-800 transition-colors cursor-pointer'
             >
-              <p className='text-lg !mb-4 !mt-4 font-semibold'>{displayPost.title}</p>
+              <p className='text-lg !pb-4 !mb-4 !mt-4 font-semibold'>{displayPost.title}</p>
               <p className='text-sm text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
             </a>
           </div>
