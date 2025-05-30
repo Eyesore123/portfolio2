@@ -82,13 +82,13 @@ export default function LatestBlogCard() {
               className='bg-gray-900 text-white lg:!p-10 rounded-xl shadow-lg lg:!max-w-lg hover:bg-gray-800 transition-colors cursor-pointer'
             >
               <p className='text-lg !pb-4 !mb-4 !mt-4 font-semibold'>{displayPost.title}</p>
-              <p className='text-sm text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
+              <p className='text-sm !p-4 md:!p-0 text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
             </a>
           </div>
         )}
         
         {error && (
-          <p className='text-xs text-yellow-400 !mt-1'>
+          <p className='text-xs text-yellow-400 !mt-3'>
             (Showing fallback content)
           </p>
         )}
