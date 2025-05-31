@@ -49,6 +49,18 @@ export default function ShowcaseSection() {
     });
   };
 
+  const video = document.getElementById('myVideo');
+
+  // Sideways landscape detection for mobile devices
+
+window.addEventListener('orientationchange', () => {
+  if (screen.orientation.type === 'landscape-primary' || screen.orientation.type === 'landscape-secondary') {
+    video.classList.add('landscape');
+  } else {
+    video.classList.remove('landscape');
+  }
+});
+
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -98,12 +110,14 @@ export default function ShowcaseSection() {
           </div>
 
           {/* Right section for video */}
-          <div className='w-full md:w-3/4'>
+          <div className='w-[345px] md:w-3/4'>
             <video
+              id="myVideo"
               ref={videoRef}
               key={`${activeProject.id}-${activeIndex}`}
               src={activeProject.video}
-              className='!pb-6 !mb-6 lg:!mb-0 w-full h-full rounded-lg min-w-[370px]'
+              type='video/mp4'
+              className='!pb-6 !mb-6 lg:!mb-0 w-full h-full rounded-lg !min-w-[330px]'
               autoPlay
               controls
               muted
