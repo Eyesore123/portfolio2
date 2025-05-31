@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import '../styles/styles.css'
 import projectData from '../data/projects'
 import { useTranslation } from 'react-i18next';
@@ -49,6 +49,14 @@ export default function ShowcaseSection() {
     });
   };
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+  }, [activeIndex]);
+
   return (
     <>
       <section className='flex flex-row justify-center items-center h-[69vh] !mb-20 !mt-8'>
@@ -92,6 +100,7 @@ export default function ShowcaseSection() {
           {/* Right section for video */}
           <div className='w-full md:w-3/4'>
             <video
+              ref={videoRef}
               key={`${activeProject.id}-${activeIndex}`}
               src={activeProject.video}
               className='!pb-6 !md:pb-0 w-full h-full rounded-lg min-w-[370px]'

@@ -1,6 +1,26 @@
 const projectData = [
     {
         id: 1,
+        name: "Joni's blog",
+        video: "/videos/blog.mp4",
+        image: "/images/blog2.png",
+        descriptionKey: "projects.card6text",
+        description: "A blog app made with Laravel, React, Typescript, Tailwind CSS, Inertia.js and PostgreSQL. Includes user authentication, blog post creation, editing and deletion, comments and a dashboard for managing posts and comments. Fully responsive.",
+        stack: [
+            { label: "PHP", icon: "/php-original.svg" },
+            { label: "Laravel", icon: "/laravel.svg" },
+            { label: "TypeScript", icon: "/typescript-original.svg" },
+            { label: "React", icon: "/react-original.svg" },
+            { label: "Tailwind CSS", icon: "/tailwindcss-original.svg" },
+            { label: "PostgreSQL", icon: "/postgres.svg" },
+        ],
+        liveLink: "https://blog-app-production-16c2.up.railway.app/",
+        codeLink: "https://github.com/Eyesore123/blog-app",
+        currentTime: 0,
+        duration: 118,
+    },
+    {
+        id: 2,
         name: 'PNP-Power.fi',
         video: "/videos/pnp-power_ready.mp4",
         image: "/images/pnp-power.png",
