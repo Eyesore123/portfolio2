@@ -59,7 +59,7 @@ export default function ShowcaseSection() {
 
   return (
     <>
-      <section className='flex flex-row justify-center items-center h-[69vh] !mb-20 !mt-8'>
+      <section className='flex flex-row justify-center items-center h-[72vh] !mb-20 !mt-8'>
         {/* <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold !mb-30'>
           Projects
         </h2> */}
