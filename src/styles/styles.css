@@ -218,7 +218,7 @@ body {
 
 @media (max-width: 768px) {
   .learning-container {
-    gap: 30px;
+    gap: 0px;
   }
 }
 
@@ -236,6 +236,11 @@ body {
 @media (max-width: 768px) {
   .tech-stack-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .tech-stack-icon img {
+    scale: 0.8;
   }
 }
 

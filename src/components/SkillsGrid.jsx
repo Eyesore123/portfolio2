@@ -1,6 +1,26 @@
 import React, { useEffect, useRef, useState, memo, useCallback } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+
+// Simple throttle helper (no lodash)
+function throttle(func, limit) {
+  let lastFunc;
+  let lastRan;
+  return function (...args) {
+    if (!lastRan) {
+      func.apply(this, args);
+      lastRan = Date.now();
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(() => {
+        if ((Date.now() - lastRan) >= limit) {
+          func.apply(this, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  };
+}
 
 const skills = [
   { name: 'JavaScript', level: 85, descriptionKey: 'skills.javascript.description' },
@@ -19,7 +39,7 @@ const skills = [
 
 // Helper hook to detect if screen is mobile or desktop for animation variants
 function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768);
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener('resize', onResize);
@@ -73,6 +93,15 @@ export default function SkillsGrid() {
   const [inViewSkills, setInViewSkills] = useState({});
   const skillRefs = useRef({});
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
+
+  // Memoized ref setter callback
+  const setRef = useCallback(
+    (name) => (el) => {
+      skillRefs.current[name] = el;
+    },
+    []
+  );
 
   const observer = useRef(null);
 
@@ -80,7 +109,7 @@ export default function SkillsGrid() {
     if (observer.current) observer.current.disconnect();
 
     observer.current = new IntersectionObserver(
-      (entries) => {
+      throttle((entries) => {
         const updates = {};
         for (const entry of entries) {
           const skillName = entry.target.dataset.skill;
@@ -91,14 +120,17 @@ export default function SkillsGrid() {
         if (Object.keys(updates).length) {
           setInViewSkills((prev) => ({ ...prev, ...updates }));
         }
-      },
-      { threshold: 0.4, rootMargin: '0px 0px -100px 0px' }
+      }, 200), // throttle to once every 200ms
+      {
+        threshold: isMobile ? 0.25 : 0.4,
+        rootMargin: '0px 0px -100px 0px',
+      }
     );
 
     Object.values(skillRefs.current).forEach((el) => {
       if (el) observer.current.observe(el);
     });
-  }, [inViewSkills]);
+  }, [inViewSkills, isMobile]);
 
   useEffect(() => {
     observeSkills();
@@ -117,7 +149,7 @@ export default function SkillsGrid() {
             skill={skill}
             inView={!!inViewSkills[skill.name]}
             t={t}
-            refCb={(el) => (skillRefs.current[skill.name] = el)}
+            refCb={setRef(skill.name)}
           />
         ))}
       </div>
