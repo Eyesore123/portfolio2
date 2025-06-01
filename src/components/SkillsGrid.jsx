@@ -72,7 +72,8 @@ export default function SkillsGrid() {
                 animate={
                   inViewSkills[skill.name] ? { width: `${skill.level}%` } : { width: 0 }
                 }
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.8}}
+                 enableHardwareAcceleration={true}
               />
             </div>
             <div className="flex justify-between items-center mt-1">
