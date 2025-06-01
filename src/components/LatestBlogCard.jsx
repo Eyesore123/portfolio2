@@ -81,7 +81,7 @@ export default function LatestBlogCard() {
               rel='noopener noreferrer'
               className='bg-gray-900 text-white lg:!p-10 rounded-xl shadow-lg lg:!max-w-lg hover:bg-gray-800 transition-colors cursor-pointer'
             >
-              <p className='text-lg !pb-4 !pt-2 !mb-4 font-semibold'>{displayPost.title}</p>
+              <p className='text-lg !pb-4 !pt-4 !mb-4 font-semibold'>{displayPost.title}</p>
               <p className='text-sm !p-4 md:!p-0 text-gray-300 !mt-2 !mb-2'>{displayPost.excerpt}</p>
             </a>
           </div>
