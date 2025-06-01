@@ -1,6 +1,20 @@
-import React, { memo } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+
+// Hook to detect if the screen is mobile
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, [breakpoint]);
+
+  return isMobile;
+}
 
 const skills = [
   { name: 'JavaScript', level: 85, descriptionKey: 'skills.javascript.description' },
@@ -19,13 +33,15 @@ const skills = [
 
 // Memoized SkillCard
 const SkillCard = memo(({ skill, t }) => {
+  const isMobile = useIsMobile();
+
   return (
     <motion.div
       className="backdrop-blur !p-6 frontbanner2 shadow-lg"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <h3 className="gradienttext font-semibold mb-2">{skill.name}</h3>
       <div className="w-full h-3 bg-white/10 rounded-full overflow-hidden">
@@ -34,7 +50,7 @@ const SkillCard = memo(({ skill, t }) => {
           initial={{ width: 0 }}
           whileInView={{ width: `${skill.level}%` }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: isMobile ? 0.2 : 0.7 }}
         />
       </div>
       <div className="flex justify-between items-center mt-1">
@@ -54,11 +70,11 @@ export default function SkillsGrid() {
 
   return (
     <motion.section
-      className="!mt-20 px-8 max-w-5xl mx-auto"
+      className="!mt-20 !px-8 max-w-5xl mx-auto"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.4 }}
     >
       <h2 className="text-3xl font-bold text-center !-mb-40 md:!mb-0 !pl-10 !pr-10 md:!p-2 orange">
         {t('projects.skillsheader')}
