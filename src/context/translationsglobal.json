@@ -98,6 +98,12 @@
     "published": "Published on",
     "loading": "Loading...",
     "linktext": "From Joni's blog:"
+  },
+  "websiteAnalyzer": {
+    "header": "Try My Free Website Analyzer!",
+    "subheader": "Get insights about your website's performance and structure.",
+    "description": "My Website Analyzer dives deep into your site — from responsiveness and SEO to speed, security, and more. It scores 10 key areas to give you a clear, actionable snapshot of your website’s performance and improvements.\u000A\u000APowered by practical, objective criteria, it covers everything from mobile-friendliness to social media integration and technology detection. Whether you’re a beginner or pro, this free tool helps boost your user experience, search rankings, and impact. Ready to elevate your website? Unlock its full potential with our expert web development services—customized just for you.",
+    "button": "Analyze a Website"
   }
   },
   
@@ -199,7 +205,13 @@
     "published": "Julkaistu",
     "loading": "Ladataan...",
     "linktext":"Jonin blogista:"
-  }
+  },
+    
+    "websiteAnalyzer.header": "Kokeile ilmaista sivuston analysointityökalua!",
+    "websiteAnalyzer.subheader": "Saat tietoa verkkosivustosi suorituskyvystä ja rakenteesta.",
+    "websiteAnalyzer.description": "Verkkosivuston analysointityökaluni syventyy sivustoosi – tarkastellen responsiivisuutta, hakukoneoptimointia, nopeutta, turvallisuutta ja paljon muuta. Se arvioi 10 keskeistä osa-aluetta tarjoten sinulle selkeän ja toimintaan kannustavan kuvan sivustosi suorituskyvystä ja parannuskohteista.\u000A\u000ATyökalu perustuu käytännöllisiin ja objektiivisiin kriteereihin, kattaen kaiken mobiiliystävällisyydestä sosiaalisen median integrointiin ja teknologioiden tunnistukseen. Olitpa aloittelija tai ammattilainen, tämä ilmainen työkalu auttaa parantamaan käyttäjäkokemusta, hakutulosten sijoitusta ja vaikuttavuutta. Valmis viemään sivustosi uudelle tasolle? Hyödynnä asiantuntevia verkkokehityspalvelujamme, jotka räätälöidään juuri sinulle.",
+    "websiteAnalyzer.button": "Analysoi sivusto"
+  
 }
 
 }
