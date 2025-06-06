@@ -976,11 +976,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 /* Animation for arrow bounce: */
 
-/* @keyframes arrow-bounce {
+@keyframes arrow-bounce {
   0%, 100% {
     transform: scale(1) translateX(0) translateY(0);
   }
-  50% {
+  40% {
     transform: scale(1.18) translateX(8px) translateY(0);
   }
 }
@@ -992,11 +992,98 @@ input:focus::placeholder, textarea:focus::placeholder {
     0%, 100% {
       transform: scale(1) translateY(0) translateX(0);
     }
-    50% {
+    40% {
       transform: scale(1.18) translateY(8px) translateX(0);
     }
   }
   .animate-arrow-bounce {
     animation: arrow-bounce-vertical 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
   }
-} */
+}
+
+@keyframes arrow-sync {
+  0% {
+    opacity: 0;
+    transform: scale(1) translateX(0);
+  }
+  10% {
+    opacity: 0.5;
+    transform: scale(1) translateX(0);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1.25) translateX(16px);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.25) translateX(16px);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1) translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) translateX(0);
+  }
+}
+
+.animate-arrow-sync {
+  animation: arrow-sync 8s linear infinite;
+}
+
+@media (max-width: 767px) {
+  @keyframes arrow-sync-vertical {
+    0% {
+      opacity: 0;
+      transform: scale(1) translateY(0);
+    }
+    10% {
+      opacity: 0.5;
+      transform: scale(1) translateY(0);
+    }
+    35% {
+      opacity: 1;
+      transform: scale(1.25) translateY(16px);
+    }
+    65% {
+      opacity: 1;
+      transform: scale(1.25) translateY(16px);
+    }
+    90% {
+      opacity: 0.5;
+      transform: scale(1) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1) translateY(0);
+    }
+  }
+  .animate-arrow-sync {
+    animation: arrow-sync-vertical 8s linear infinite;
+  }
+}
+
+@keyframes glow-sync {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6; /* or your preferred glow strength */
+  }
+}
+.animate-glow-sync {
+  animation: glow-sync 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes phone-sync {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+.animate-phone-sync {
+  animation: phone-sync 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

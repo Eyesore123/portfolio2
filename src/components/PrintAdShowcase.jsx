@@ -16,30 +16,30 @@ export default function PrintAdShowcase() {
             <img
               src="/mainos.jpg"
               alt={t('showcase.printAdAlt')}
-              className="rounded-xl shadow-lg !max-w-[250px] md:!min-w-[250px] !md:max-w-[300px] !lg:max-w-[480px] lg:!min-w-[400px]"
+              className="rounded-xl shadow-lg !max-w-[250px] md:!min-w-[260px] !md:max-w-[300px] !lg:max-w-[480px] lg:!min-w-[400px]"
               loading="lazy"
             />
           </div>
 
-            {/* Arrow Placeholder */}
+          {/* Arrow Placeholder */}
           <div className="flex flex-col items-center">
-            <span className="!mb-4 md:!ml-0 text-5xl md:text-7xl text-[#ffc600] !xl:w-40">
+            <span className="!mb-8 !-mt-4 xl:!mr-8 !text-4xl md:!text-7xl text-[#ffc600] !xl:w-40 animate-arrow-sync">
               <span className="block md:hidden">&#8595;</span>
               <span className="hidden md:block">&#8594;</span>
             </span>
           </div>
 
           {/* Website Image with Glow and White Border */}
-          <div className="flex flex-col items-center relative max-w-[250px] min-w-[180px] md:max-w-[260px] lg:!max-w-[280px] w-full">
+          <div className="flex flex-col items-center relative max-w-[260px] min-w-[200px] md:max-w-[260px] lg:!max-w-[280px] w-full">
             <span className="absolute inset-0 flex justify-center items-center pointer-events-none">
-              <span className="block w-full h-full rounded-2xl bg-gradient-to-tr from-[#ffc600] to-[#e900ff] opacity-20 blur-lg animate-slow-pulse scale-107"></span>
+              <span className="block w-full h-full rounded-2xl bg-gradient-to-tr from-[#ffc600] to-[#e900ff] blur-lg animate-glow-sync scale-107"></span>
             </span>
             <img
               src="/pnppower_mobile.png"
               alt={t('showcase.websiteAlt')}
-              className="rounded-xl border-4 border-white shadow-lg w-full relative z-10"
+              className="rounded-xl border-4 border-white shadow-lg w-full relative z-10 animate-phone-sync"
               loading="lazy"
-               onClick={() => window.open('https://www.pnp-power.fi', '_blank', 'noopener,noreferrer')}
+              onClick={() => window.open('https://www.pnp-power.fi', '_blank', 'noopener,noreferrer')}
               style={{ cursor: 'pointer' }}
             />
           </div>
