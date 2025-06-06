@@ -963,3 +963,40 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 0;
   margin: 0;
 }
+
+/* Animation for PrintAdShowcase: */
+
+@keyframes slow-pulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.6; }
+}
+.animate-slow-pulse {
+  animation: slow-pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Animation for arrow bounce: */
+
+/* @keyframes arrow-bounce {
+  0%, 100% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.18) translateX(8px) translateY(0);
+  }
+}
+.animate-arrow-bounce {
+  animation: arrow-bounce 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+@media (max-width: 767px) {
+  @keyframes arrow-bounce-vertical {
+    0%, 100% {
+      transform: scale(1) translateY(0) translateX(0);
+    }
+    50% {
+      transform: scale(1.18) translateY(8px) translateX(0);
+    }
+  }
+  .animate-arrow-bounce {
+    animation: arrow-bounce-vertical 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+  }
+} */

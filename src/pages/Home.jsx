@@ -6,6 +6,7 @@ import TechStack from '../components/TechStack';
 import Githubandcvs from '../components/Githubandcvs';
 import TransitionCard from '../components/TransitionCard';
 import LatestBlogCard from '../components/LatestBlogCard';
+import PrintAdShowcase from '../components/PrintAdShowcase';
 import BackToTopButton from '../components/BackToTopButton';
 import { useTranslation } from 'react-i18next';
 import { TypeAnimation } from 'react-type-animation';
@@ -107,6 +108,7 @@ export default function Home() {
       </section>
       <FrontBanner />
       <LatestBlogCard />
+      <PrintAdShowcase />
       <FrontText1 />
       <TechStack />
       <FrontText2 />
