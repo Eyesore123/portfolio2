@@ -971,7 +971,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   50% { opacity: 0.6; }
 }
 .animate-slow-pulse {
-  animation: slow-pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: slow-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* Animation for arrow bounce: */
@@ -985,7 +985,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 .animate-arrow-bounce {
-  animation: arrow-bounce 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+  animation: arrow-bounce 1s cubic-bezier(0.4,0,0.2,1) infinite;
 }
 @media (max-width: 767px) {
   @keyframes arrow-bounce-vertical {
@@ -997,7 +997,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
   }
   .animate-arrow-bounce {
-    animation: arrow-bounce-vertical 1.4s cubic-bezier(0.4,0,0.2,1) infinite;
+    animation: arrow-bounce-vertical 1s cubic-bezier(0.4,0,0.2,1) infinite;
   }
 }
 
@@ -1029,7 +1029,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 .animate-arrow-sync {
-  animation: arrow-sync 8s linear infinite;
+  animation: arrow-sync 5s linear infinite;
 }
 
 @media (max-width: 767px) {
@@ -1060,7 +1060,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
   }
   .animate-arrow-sync {
-    animation: arrow-sync-vertical 8s linear infinite;
+    animation: arrow-sync-vertical 5s linear infinite;
   }
 }
 
@@ -1073,7 +1073,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 .animate-glow-sync {
-  animation: glow-sync 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: glow-sync 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes phone-sync {
@@ -1085,5 +1085,5 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 .animate-phone-sync {
-  animation: phone-sync 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: phone-sync 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
