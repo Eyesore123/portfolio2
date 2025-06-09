@@ -130,7 +130,7 @@ export default function About() {
               />
             </p>
 
-            <h6 className='gradienttext movingtext flex flex-row justify-center items-center text-center font-bold max-w-200 '>{t("about.header2")}</h6>
+            <h6 className='gradienttext flex flex-row justify-center items-center text-center font-bold max-w-200 '>{t("about.header2")}</h6>
             <p className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>{t("about.academia")}</p>
             
             <h6 className='gradienttext flex flex-row justify-center items-center text-center font-bold max-w-200 '>{t("about.header3")}</h6>
