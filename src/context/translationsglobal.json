@@ -38,6 +38,7 @@
     "about.header4": "On AI, Learning and Growth",
     "about.header5": "Who I Am",
     "about.intro": "Hey there! I'm Joni - a 32-year-old self-taught developer with a background in philosophy, sports sciences and sociology. I'm currently in a career transition, building my skills in web development while planning to launch my own digital business.",
+    "about.blogLink": "I write regularly to my <0>blog</0> about programming, technology, my current projects and life in general.",
     "about.academia": "I graduated from the University of Jyväskylä in 2019 with three master's degrees. Later I worked as a municipal sports secretary in Ilomantsi where I was coordinating and organizing youth and sports services. While the role had its challenges, I valued the opportunity to make a tangible difference. Over time my curiosity and drive led me towards new areas - especially technology and coding.",
     "about.learning": "I began to learn coding (websites) in late 2023. What started as a curiosity has become a daily commitment. I dedicate several hours each day to learning through projects - websites, small games and practical tools that solve real problems. I've discovered that hands-on challenges teach more than tutorials ever could, though I'm grateful to all great teachers who put their time into teaching others.",
     "about.philosophy": "I build things because I want them to work, not just look good.",
@@ -152,6 +153,7 @@
   "about.header4": "Tekoälystä, oppimisesta ja kasvusta",
   "about.header5": "Kuka olen",
   "about.intro": "Moikka! Olen Joni – 32-vuotias itseoppinut koodari, jolla on tausta filosofiassa, liikuntatieteissä ja sosiologiassa. Olen parhaillaan siirtymässä kunta-alalta teknologia-alalle, kehittämässä koodaustaitojani ja suunnittelemassa omaa digitaalista liiketoimintaa.",
+  "about.blogLink": "Kirjoitan säännöllisesti <0>blogiini</0> ohjelmoinnista, tekniikasta, nykyisistä projekteistani ja elämästä yleensä.",
   "about.academia": "Valmistuin Jyväskylän yliopistosta vuonna 2019 kolmella maisterin tutkinnolla. Myöhemmin toimin Ilomantsissa kunnan liikuntasihteerinä, jossa koordinoin ja järjestin nuoriso- ja liikuntapalveluja. Vaikka roolissa oli omat haasteensa, arvostin mahdollisuutta vaikuttaa asioihin konkreettisesti. Uteliaisuuteni ja motivaationi veivät minut ajan myötä uusille alueille – erityisesti teknologian ja koodauksen pariin.",
   "about.learning": "Aloitin koodaamisen (verkkosivut) harjoittelun loppuvuodesta 2023. Uteliaisuudesta alkanut harrastus on muuttunut päivittäiseksi tekemiseksi. Käytän useita tunteja päivittäin oppimiseen projektien kautta – sivustojen, pienpelien ja käytännön työkalujen rakentamiseen. Olen huomannut, että käytännön haasteet opettavat enemmän kuin yksikään johdantovideo, mutta olen toki kiitollinen kaikille loistaville opettajille, jotka panostavat koulutukseen ja oppimiseen.",
   "about.philosophy": "Rakennan asioita käytännönläheisesti ja toimivuus edellä, en siksi, että ne näyttäisivät hyvältä.",
@@ -224,7 +226,7 @@
     "websiteAlt": "Verkkosivustoversio",
     "printAdLabel": "Printtimainos",
     "websiteLabel": "Verkkosivusto"
-  }  
+  }
 }
 
 }

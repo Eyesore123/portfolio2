@@ -10,7 +10,7 @@ export default function Contact() {
 
   return (
     <>
-    <section className='flex flex-row justify-center items-center h-auto !mb-30 !-mt-10'>
+    <section className='flex flex-row justify-center items-center h-auto !mb-30 !-mt-2 md:!-mt-10'>
         <div className='fronttext1 md:!pt-12 !pb-22 !pl-6 !pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
             <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold'>{t("contact.header1")}</h2>
             <div className='!pt-12 !pb-22 !pl-6 !pr-6 w-[100%] flex flex-col justify-center items-center gap-12 md:gap-20'>
