@@ -8,6 +8,7 @@ export default function LatestBlogCard() {
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   const fallbackPost = {
     title: "Welcome to my blog!",
@@ -50,23 +51,119 @@ export default function LatestBlogCard() {
             {t("latestblog.linktext")}
           </p>
 
-          {/* Image */}
+          {/* Image with gradient border and spinner */}
           {displayPost && (
-            <div className='!mt-4 !p-1 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full'>
+            <div
+              className='!mt-4 relative flex items-center justify-center'
+              style={{
+                width: 154,
+                height: 154,
+              }}
+            >
+              {/* Gradient border */}
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: 'linear-gradient(45deg, #ffc600, #e900ff)',
+                  zIndex: 1,
+                }}
+              />
+              {/* White inner background for border effect */}
+              <div
+                className="absolute"
+                style={{
+                  top: 2,
+                  left: 2,
+                  width: 150,
+                  height: 150,
+                  borderRadius: '50%',
+                  background: 'black',
+                  zIndex: 2,
+                }}
+              />
+              {/* Spinner */}
+              {!imageLoaded && (
+                <div
+                  className="absolute flex items-center justify-center"
+                  style={{
+                    top: 0,
+                    left: 0,
+                    width: 154,
+                    height: 154,
+                    borderRadius: '50%',
+                    zIndex: 3,
+                    pointerEvents: 'none',
+                  }}
+                >
+                  <div style={{
+                    width: 40,
+                    height: 40,
+                    border: '6px solid transparent',
+                    borderTop: '6px solid',
+                    borderRadius: '50%',
+                    animation: 'spin 1s linear infinite',
+                    borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1'
+                  }} />
+                  <style>
+                    {`
+                      @keyframes spin {
+                        0% { transform: rotate(0deg);}
+                        100% { transform: rotate(360deg);}
+                      }
+                    `}
+                  </style>
+                </div>
+              )}
+              {/* Image */}
               <a
                 href={displayPost.url}
                 target='_blank'
                 rel="noopener noreferrer"
+                className="absolute"
+                style={{
+                  top: 2,
+                  left: 2,
+                  width: 150,
+                  height: 150,
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  zIndex: 4,
+                  display: imageLoaded ? 'block' : 'none'
+                }}
               >
                 <img
                   src={displayPost.imageUrl || "/fallbackimage.jpg"}
                   alt="Blog post thumbnail"
-                  className='w-[150px] h-[150px] object-cover rounded-full hover:cursor-pointer'
+                  width={150}
+                  height={150}
+                  className='object-cover w-[150px] h-[150px] rounded-full hover:cursor-pointer'
+                  onError={(e) => {
+                    e.target.src = "/fallbackimage.jpg";
+                  }}
+                  onLoad={() => setImageLoaded(true)}
+                  style={{
+                    width: 150,
+                    height: 150,
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    display: 'block'
+                  }}
+                />
+              </a>
+              {/* Preload image for onLoad event if not loaded */}
+              {!imageLoaded && (
+                <img
+                  src={displayPost.imageUrl || "/fallbackimage.jpg"}
+                  alt="Blog post thumbnail"
+                  width={150}
+                  height={150}
+                  style={{ display: 'none' }}
+                  onLoad={() => setImageLoaded(true)}
                   onError={(e) => {
                     e.target.src = "/fallbackimage.jpg";
                   }}
                 />
-              </a>
+              )}
             </div>
           )}
 
