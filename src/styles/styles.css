@@ -920,7 +920,7 @@ div > input {
   font-size: 16px;
 }
 
-input, textarea {
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid transparent;
@@ -932,6 +932,16 @@ input, textarea {
 
 textarea {
   height: 200px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #e900ff, #ffc600) 1;
+  border-image-slice: 1;
+  font-size: 16px;
+  text-align: center;
 }
 
 input:focus, textarea:focus {
@@ -946,6 +956,38 @@ input:focus::placeholder, textarea:focus::placeholder {
 .input-field::placeholder {
   color: white;
 }
+
+.cookie-consent .flex input[type="checkbox"].checkbox-input {
+  width: 14px !important;
+}
+
+.cookiediv {
+  overflow: hidden !important;
+
+  /* Experimental animation, used with blur3 class */
+
+  /* animation: gradientPulse 24s ease-in-out infinite;
+  background-image: linear-gradient(to right, #111, #000, #222, #111);
+  background-size: 400% 100%; */
+}
+
+/* @keyframes gradientPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  75% {
+    background-position: 300% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
 
 /* Test, invisible h1 for seo */
 
@@ -1069,7 +1111,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     opacity: 0;
   }
   50% {
-    opacity: 0.6; /* or your preferred glow strength */
+    opacity: 0.6;
   }
 }
 .animate-glow-sync {

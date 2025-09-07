@@ -66,7 +66,7 @@ export default function ContactForm() {
           type="text"
           name="name"
           placeholder={t('contact.name')}
-          className="input-field"
+          className="input-field contact-input"
           required
           value={formData.name}
           onChange={handleChange}
@@ -75,7 +75,7 @@ export default function ContactForm() {
           type="email"
           name="email"
           placeholder={t('contact.email')}
-          className="input-field"
+          className="input-field contact-input"
           required
           value={formData.email}
           onChange={handleChange}
@@ -83,7 +83,7 @@ export default function ContactForm() {
         <textarea
           name="message"
           placeholder={t('contact.message')}
-          className="input-field"
+          className="input-field contact-input"
           required
           value={formData.message}
           onChange={handleChange}

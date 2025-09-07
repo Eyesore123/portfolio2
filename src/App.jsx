@@ -6,13 +6,13 @@ import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
 import Layout from './layout/Layout.jsx';
 import NotFound from './components/NotFound.jsx';
-// import ScrollToTop from './components/ScrollToTop.jsx';
+import CookieConsent from './components/CookieConsent.jsx';
 
 export default function App() {
   return (
     <BrowserRouter>
-    {/* <ScrollToTop /> */}
     <Layout>
+      <CookieConsent />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

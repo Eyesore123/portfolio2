@@ -112,7 +112,15 @@
   "websiteAlt": "Website version",
   "printAdLabel": "Print Ad",
   "websiteLabel": "Website"
-}
+},
+  "cookieConsent": {
+      "title": "Cookie usage",
+      "description": "I use cookies for essential functionality and optional features. I do not use marketing cookies.",
+      "accept": "Accept",
+      "decline": "Decline optional",
+      "necessary": "Necessary cookies (required)",
+      "optional": "Optional cookies"
+    }
   },
   
   "fi": {
@@ -226,6 +234,14 @@
     "websiteAlt": "Verkkosivustoversio",
     "printAdLabel": "Printtimainos",
     "websiteLabel": "Verkkosivusto"
+  },
+  "cookieConsent": {
+    "title": "Evästeiden käyttö",
+    "description": "Käytän evästeitä sivuston toimivuuden kannalta välttämättömiin ominaisuuksiin (pakolliset) ja vapaaehtoisiin ominaisuuksiin. En käytä markkinointievästeitä.",
+    "accept": "Hyväksy",
+    "decline": "Hylkää vapaaehtoiset",
+    "necessary": "Pakolliset evästeet (vaaditaan)",
+    "optional": "Vapaaehtoiset evästeet"
   }
 }
 
