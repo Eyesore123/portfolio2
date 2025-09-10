@@ -93,7 +93,7 @@
   "skillsfocus.improving1": "Advanced front-end frameworks and libraries",
   "skillsfocus.improving2": "Backend development and database management",
   "skillsfocus.improving3": "Optimizing performance and accessibility",
-  "backToTop": "Start of the page",
+  "backToTop": "Back to top",
   "latestblog": {
     "header": "Latest Blog Post",
     "published": "Published on",
@@ -119,7 +119,8 @@
       "accept": "Accept",
       "decline": "Decline optional",
       "necessary": "Necessary cookies (required)",
-      "optional": "Optional cookies"
+      "optional": "Optional cookies",
+      "settings": "Settings"
     }
   },
   
@@ -241,7 +242,8 @@
     "accept": "Hyväksy",
     "decline": "Hylkää vapaaehtoiset",
     "necessary": "Pakolliset evästeet (vaaditaan)",
-    "optional": "Vapaaehtoiset evästeet"
+    "optional": "Vapaaehtoiset evästeet",
+    "settings": "Asetukset"
   }
 }
 
