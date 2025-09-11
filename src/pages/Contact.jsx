@@ -10,14 +10,14 @@ export default function Contact() {
 
   return (
     <>
-    <section className='flex flex-row justify-center items-center h-auto !mb-30 !-mt-2 md:!-mt-10'>
-        <div className='fronttext1 md:!pt-12 !pb-22 !pl-6 !pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-10 justify-center items-center'>
-            <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold'>{t("contact.header1")}</h2>
-            <div className='!pt-12 !pb-22 !pl-6 !pr-6 w-[100%] flex flex-col justify-center items-center gap-12 md:gap-20'>
-              <div className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>{t("contact.p1")}</div>
-              <div className='flex flex-row justify-center items-center text-center font-bold w-full max-w-200'>
+    <div className='flex flex-row justify-center items-center !mb-0 !-mt-2 md:!-mt-10 w-full'>
+        <div className='md:!pt-12 !pb-22 md:!pl-0 md:!pr-0 flex flex-col gap-10 justify-center items-center'>
+            <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold w-full'>{t("contact.header1")}</h2>
+            <div className='!pt-12 !pb-22 flex flex-col justify-center items-center gap-10 md:gap-20 w-full'>
+              <div className='flex flex-row justify-center items-center text-center font-bold w-full !pr-4 !pl-4'>{t("contact.p1")}</div>
+              
               {/* Icons and contact info */}
-              <div className='flex flex-col gap-10 md:gap-20'>
+              <div className='flex flex-col gap-10 '>
 
                 <div className='flex flex-row justify-start items-center gap-10 md:gap-20 lg:!ml-10'>
                 <img src='/Phone.svg' className='phoneicon' style={{width: '40px', height: '40px', filter: 'invert(1)'}} alt="Phone Icon" />+358449627207
@@ -27,12 +27,12 @@ export default function Contact() {
                 </div>
               <ContactForm/>
               </div>
-              </div>
+
               
           </div>
         </div>
         <BackToTopButton/>
-    </section>
+    </div>
     </>
   )
 }

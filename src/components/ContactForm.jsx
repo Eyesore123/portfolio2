@@ -69,7 +69,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div className="md:!pt-12 !pb-22 !pl-6 !pr-6 gap-10 justify-center items-center">
       <h2 className="gradienttext flex flex-row justify-center items-center text-center font-bold !mt-20">
         {t('contact.header2')}
       </h2>
