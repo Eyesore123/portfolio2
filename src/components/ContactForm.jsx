@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function ContactForm() {
@@ -11,7 +11,20 @@ export default function ContactForm() {
   });
 
   const [statusMessage, setStatusMessage] = useState('');
-  const [loading, setLoading] = useState(false); // Track loading state
+  const [loading, setLoading] = useState(false);
+  const [dots, setDots] = useState('');
+
+  useEffect(() => {
+    let interval;
+    if (loading) {
+      interval = setInterval(() => {
+        setDots((prev) => (prev.length >= 3 ? '' : prev + '.'));
+      }, 500);
+    } else {
+      setDots('');
+    }
+    return () => clearInterval(interval);
+  }, [loading]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -90,18 +103,22 @@ export default function ContactForm() {
         ></textarea>
 
         {loading ? (
-          <div
-            style={{
-              width: '30px',
-              height: '30px',
-              border: '4px solid transparent',
-              marginTop: '20px',
-              borderTop: '4px solid',
-              borderRadius: '50%',
-              animation: 'spin 1s linear infinite',
-              borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1',
-            }}
-          />
+          <div className="flex flex-col items-center justify-center !mt-6">
+            <div
+              style={{
+                width: '30px',
+                height: '30px',
+                border: '4px solid transparent',
+                borderTop: '4px solid',
+                borderRadius: '50%',
+                animation: 'spin 1s linear infinite',
+                borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1',
+              }}
+            />
+            <p className="text-center !mt-6">
+              {t('contact.loadingmessage')}{dots}
+            </p>
+          </div>
         ) : (
           <button type="submit" className="submitbutton btn btn-primary !mt-6">
             {t('contact.button')}
