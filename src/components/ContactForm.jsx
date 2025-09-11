@@ -42,9 +42,7 @@ export default function ContactForm() {
     try {
       const response = await fetch('https://portfolio-backend-k9okia.fly.dev/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
@@ -110,20 +108,18 @@ export default function ContactForm() {
           onChange={handleChange}
         ></textarea>
 
-        {/* Container to prevent layout shift */}
-        <div className="relative flex justify-center !mt-6 min-h-[60px]">
-          {/* Submit button always in DOM, hidden during loading */}
+        {/* Button always in DOM to preserve styles */}
+        <div className="relative flex justify-center !mt-6">
           <button
             type="submit"
             className="submitbutton btn btn-primary"
-            style={{ visibility: loading ? 'hidden' : 'visible' }}
+            disabled={loading} // prevent clicks while loading
           >
             {t('contact.button')}
           </button>
 
-          {/* Spinner and loading message overlay */}
           {loading && (
-            <div className="absolute flex flex-col items-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent">
               <div style={spinnerStyles} />
               <p className="text-center mt-4">
                 {t('contact.loadingmessage')}
