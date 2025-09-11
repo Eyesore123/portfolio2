@@ -36,13 +36,15 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setStatusMessage('');
+    setLoading(true); // Show the loader
+    setStatusMessage(''); // Reset previous status message before sending a new one
 
     try {
       const response = await fetch('https://portfolio-backend-k9okia.fly.dev/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify(formData)
       });
 
@@ -50,28 +52,20 @@ export default function ContactForm() {
       setStatusMessage(data.message);
 
       if (data.success) {
+        // Clear form if successful
         setFormData({ name: '', email: '', message: '' });
       }
 
     } catch (error) {
       setStatusMessage('❌ Something went wrong. Please try again.');
     } finally {
-      setLoading(false);
+      setLoading(false); // Hide the loader
 
+      // Hide the status message after 5 seconds
       setTimeout(() => {
         setStatusMessage('');
       }, 5000);
     }
-  };
-
-  const spinnerStyles = {
-    width: '30px',
-    height: '30px',
-    border: '4px solid transparent',
-    borderTop: '4px solid',
-    borderRadius: '50%',
-    animation: 'spin 1s linear infinite',
-    borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1',
   };
 
   return (
@@ -108,28 +102,28 @@ export default function ContactForm() {
           onChange={handleChange}
         ></textarea>
 
-        {/* Button always in DOM to preserve styles */}
-        <div className="relative flex justify-center !mt-6">
-          <button
-            type="submit"
-            className="submitbutton btn btn-primary"
-            disabled={loading} // prevent clicks while loading
-          >
+        {loading ? (
+          <div className="flex flex-col items-center justify-center !mt-6">
+            <div
+              style={{
+                width: '30px',
+                height: '30px',
+                border: '4px solid transparent',
+                borderTop: '4px solid',
+                borderRadius: '50%',
+                animation: 'spin 1s linear infinite',
+                borderImage: 'linear-gradient(45deg, #5800ff, #e900ff) 1',
+              }}
+            />
+            <div className="text-center !mt-6">
+              {t('contact.loadingmessage')}{dots}
+            </div>
+          </div>
+        ) : (
+          <button type="submit" className="submitbutton btn btn-primary !mt-6">
             {t('contact.button')}
           </button>
-
-          {loading && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-transparent">
-              <div style={spinnerStyles} />
-              <p className="text-center mt-4">
-                {t('contact.loadingmessage')}
-                <span style={{ display: 'inline-block', width: '1.5em', textAlign: 'left' }}>
-                  {dots}
-                </span>
-              </p>
-            </div>
-          )}
-        </div>
+        )}
       </form>
 
       {statusMessage && (
