@@ -116,7 +116,10 @@ export default function ContactForm() {
               }}
             />
             <div className="text-center !mt-6">
-              {t('contact.loadingmessage')}{dots}
+              {t('contact.loadingmessage')}
+              <span style={{ display: 'inline-block', width: '1.5em', textAlign: 'left' }}>
+              {dots}
+              </span>
             </div>
           </div>
         ) : (
