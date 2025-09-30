@@ -1,2 +1,8 @@
+# Serve sitemap.xml normally
 /sitemap.xml  /sitemap.xml  200
-/*           /index.html  200
+
+# Serve robots.txt normally
+/robots.txt  /robots.txt  200
+
+# SPA catch-all for everything else
+/*  /index.html  200
