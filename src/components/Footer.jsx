@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer-container">
       <div className='blur3'></div>
       
-      <footer className="footer">
+      <footer className="footer !mt-20">
         <small className="orange">Copyright &copy; {new Date().getFullYear()} Joni Putkinen</small>
       </footer>
     </div>

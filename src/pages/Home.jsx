@@ -8,6 +8,7 @@ import TransitionCard from '../components/TransitionCard';
 import LatestBlogCard from '../components/LatestBlogCard';
 import PrintAdShowcase from '../components/PrintAdShowcase';
 import BackToTopButton from '../components/BackToTopButton';
+import FullWidthVideoOffer from '../components/FullWidthVideoOffer';
 import { useTranslation } from 'react-i18next';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -104,16 +105,16 @@ export default function Home() {
               </div>
             </div>
           </div>
-        {/* </div> */}
       </section>
-      <FrontBanner />
       <LatestBlogCard />
+      <FullWidthVideoOffer />
       <PrintAdShowcase />
       <FrontText1 />
       <TechStack />
       <FrontText2 />
       <Githubandcvs />
       <TransitionCard />
+      <FrontBanner />
       <BackToTopButton />
 
       <style>

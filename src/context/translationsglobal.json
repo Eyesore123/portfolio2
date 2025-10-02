@@ -114,6 +114,17 @@
   "printAdLabel": "Print Ad",
   "websiteLabel": "Website"
 },
+
+  "offer": {
+    "specialOffer": "Special Offer!",
+    "description": "Need help with your website? Or perhaps want to set up your own customized blog? I'll provide support for free for a limited time!",
+    "contactLink": "Send me a message",
+    "videoCredit": "Video edit:",
+    "videoCreditLinkText": "HiveFX!",
+    "contactText": " and we'll see how I can help."
+  }
+,
+
   "cookieConsent": {
       "title": "Cookie usage",
       "description": "I use cookies for essential functionality and optional features. I do not use marketing cookies.",
@@ -238,6 +249,16 @@
     "printAdLabel": "Printtimainos",
     "websiteLabel": "Verkkosivusto"
   },
+  "offer": {
+    "specialOffer": "Erikoistarjous!",
+    "description": "Tarvitsetko apua verkkosivusi kanssa? Tai ehkä haluat perustaa oman räätälöidyn blogin? Tarjoan apua ilmaiseksi rajoitetun ajan!",
+    "contactLink": "Lähetä minulle viesti",
+    "videoCredit": "Video edit:",
+    "videoCreditLinkText": "HiveFX!",
+    "contactText": " niin katsotaan, että kuinka voin auttaa."
+  },
+
+
   "cookieConsent": {
     "title": "Evästeiden käyttö",
     "description": "Käytän evästeitä sivuston toimivuuden kannalta välttämättömiin ominaisuuksiin (pakolliset) ja vapaaehtoisiin ominaisuuksiin. En käytä markkinointievästeitä.",

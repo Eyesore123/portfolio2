@@ -51,7 +51,7 @@ export default function CookieConsent() {
       {visible && (
         <div className="cookiediv fixed bottom-0 left-0 right-0 bg-black text-white !p-6 
                         flex flex-col md:flex-row items-start md:items-center justify-between 
-                        !space-y-4 md:!space-y-0 md:!space-x-4 !z-50 shadow-lg border-t border-[#5800FF]">
+                        !space-y-4 md:!space-y-0 md:!space-x-4 !z-50 shadow-lg border-t border-[#E900FF]">
           <div className="flex-1 xl:!ml-12 2xl:!ml-50">
             <div className="!mb-3">
               {t('cookieConsent.description')}
