@@ -3,4 +3,4 @@ Allow: /
 Disallow: /src
 Disallow: /node_modules
 Disallow: /dist
-Sitemap: https://jonis-portfolio.netlify.app/sitemap.xml
+Sitemap: https://joniputkinen.com/sitemap.xml

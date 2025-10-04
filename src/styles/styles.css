@@ -1129,3 +1129,37 @@ input:focus::placeholder, textarea:focus::placeholder {
 .animate-phone-sync {
   animation: phone-sync 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* Footer styles */
+
+.footer-portfolio {
+  background: linear-gradient(135deg, #5800ff, #e900ff, #5800ff);
+  background-size: 600% 600%;
+  animation: gradientPulse 12s ease-in-out infinite;
+  color: var(--text-primary);
+  box-shadow: 0 0 20px rgba(88, 0, 255, 0.4), 0 0 40px rgba(233, 0, 255, 0.3);
+  padding: 2rem 1rem;
+  text-align: center;
+  isolation: isolate;
+}
+
+.footer-portfolio img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-portfolio img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+@keyframes gradientPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
