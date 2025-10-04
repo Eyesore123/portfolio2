@@ -40,8 +40,8 @@ export default function Footer() {
           </a>
         </div>
 
-        <p className="text-xs opacity-70 text-center !mt-2">
-          Made with <span className="text-[white]">♥</span> in Finland
+        <p className="text-xs opacity-80 text-center !mt-2">
+          Made with <span className="movingtext">♥</span> in Finland
         </p>
       </div>
     </footer>
