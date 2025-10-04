@@ -13,12 +13,12 @@ export default function LatestBlogCard() {
   const fallbackPost = {
     title: "Welcome to my blog!",
     excerpt: "Check out my latest thoughts and tutorials on web development.",
-    url: "https://blog-app-production-16c2.up.railway.app/",
+    url: "https://blog.joniputkinen.com/",
     imageUrl: "/fallbackimage.jpg" // Fallback image
   };
 
   useEffect(() => {
-    fetch('https://blog-app-production-16c2.up.railway.app/api/latest-post')
+    fetch('https://blog.joniputkinen.com/api/latest-post')
       .then(res => {
         if (!res.ok) {
           throw new Error('Failed to fetch');

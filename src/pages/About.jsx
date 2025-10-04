@@ -5,7 +5,7 @@ import '../styles/styles.css';
 
 export default function About() {
   const { t } = useTranslation();
-  const blogLink = 'https://blog-app-production-16c2.up.railway.app/';
+  const blogLink = 'https://blog.joniputkinen.com/';
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (

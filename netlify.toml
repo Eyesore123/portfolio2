@@ -11,11 +11,11 @@
   [headers.values]
     Content-Security-Policy = """
       default-src 'self';
-      script-src 'self' https://blog-app-production-16c2.up.railway.app https://joniputkinen.com 'unsafe-inline' 'unsafe-eval';
-      script-src-elem 'self' https://blog-app-production-16c2.up.railway.app https://joniputkinen.com 'unsafe-inline' 'unsafe-eval';
-      style-src 'self' 'unsafe-inline' https://blog-app-production-16c2.up.railway.app;
-      connect-src 'self' https://blog-app-production-16c2.up.railway.app https://portfolio-backend-k9okia.fly.dev;
-      img-src 'self' https://blog-app-production-16c2.up.railway.app https://joniputkinen.com;
+      script-src 'self' https://blog.joniputkinen.com https://joniputkinen.com 'unsafe-inline' 'unsafe-eval';
+      script-src-elem 'self' https://blog.joniputkinen.com https://joniputkinen.com 'unsafe-inline' 'unsafe-eval';
+      style-src 'self' 'unsafe-inline' https://blog.joniputkinen.com;
+      connect-src 'self' https://blog.joniputkinen.com https://portfolio-backend-k9okia.fly.dev;
+      img-src 'self' https://blog.joniputkinen.com https://joniputkinen.com;
       object-src 'none';
       frame-src 'none';
       upgrade-insecure-requests;
