@@ -1162,3 +1162,10 @@ input:focus::placeholder, textarea:focus::placeholder {
     background-position: 0% 50%;
   }
 }
+
+/* Custom height for FullWidthVideoFool component based on screen width */
+@media (min-width: 2100px) {
+  .customheight {
+    height: 1200px;
+  }
+}
