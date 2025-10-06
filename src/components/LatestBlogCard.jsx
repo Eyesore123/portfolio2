@@ -47,7 +47,7 @@ export default function LatestBlogCard() {
         {/* Blog Post */}
         <div className="flex-1 flex flex-col items-center text-center">
           <h2 className='gradienttext text-2xl !mb-4'>{t("latestblog.header")}</h2>
-          <p className='text-xs !mt-3 !mb-8 font-bold bg-gradient-to-r from-pink-500 to-yellow-400 bg-clip-text text-transparent cursor-pointer hover:opacity-80'>
+          <p className='text-xs !mt-3 !mb-4 md:!mb-8 font-bold bg-gradient-to-r from-pink-500 to-yellow-400 bg-clip-text text-transparent cursor-pointer hover:opacity-80'>
             {t("latestblog.linktext")}
           </p>
 

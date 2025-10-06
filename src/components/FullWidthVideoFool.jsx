@@ -2,17 +2,18 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Play, Pause, VolumeX, Volume2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-export default function FullWidthVideoOffer() {
+export default function FullWidthVideoFool() {
   const { t } = useTranslation();
-  const contactUrl = "/contact";
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
   const [playing, setPlaying] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // set base volume once after mount
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.volume = 0.5;
+      // Once metadata is loaded, stop loading
+      videoRef.current.onloadeddata = () => setLoading(false);
     }
   }, []);
 
@@ -35,50 +36,73 @@ export default function FullWidthVideoOffer() {
   };
 
   return (
-    <section className="w-full relative lg:!h-[500px] !mt-10 !mb-16 overflow-hidden shadow-lg">
+    <section className="w-screen h-100 lg:h-[1000px] overflow-hidden relative !mx-0 !px-0">
+
+      {/* Loading spinner */}
+      {loading && (
+        <div className="absolute inset-0 flex items-center justify-center z-20 bg-black/50">
+          <div
+            style={{
+              width: 50,
+              height: 50,
+              border: '6px solid transparent',
+              borderTop: '6px solid #E900FF',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite',
+            }}
+          />
+          <style>{`
+            @keyframes spin {
+              0% { transform: rotate(0deg);}
+              100% { transform: rotate(360deg);}
+            }
+          `}</style>
+        </div>
+      )}
+
       {/* Background video */}
       <video
         ref={videoRef}
-        src="/videos/Heroedit.mp4"
-        preload="none"
+        src="/fool.mp4"
+        preload="auto"
         autoPlay
         muted={muted}
         loop
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
+        className="
+          absolute top-0 left-0
+          w-full h-auto lg:h-full
+          min-h-[350px] 
+          object-cover
+          opacity-100
+        "
       />
 
       {/* Overlay content */}
-      <div className="relative z-10 !p-6 md:!p-12 flex flex-col justify-center items-start lg:!ml-100">
-        <h3 className="text-3xl md:text-4xl font-semibold !mb-4 text-[#E900FF] underline">
-          {t("offer.specialOffer")}
-        </h3>
-        <p className="text-sm md:text-base !mb-6 opacity-90 max-w-2xl">
-          {t("offer.description")}
-          <a
-            href={contactUrl}
-            className="text-[#E900FF] hover:text-[#5800FF] !ml-1"
-          >
-            {t("offer.contactLink")}
-          </a>
-          {t("offer.contactText")}
-        </p>
-
-        {/* Stylish reference to video edit */}
+      <div
+        className="
+          relative z-10
+          !p-6 md:!p-12
+          flex flex-col
+          justify-center
+          items-center lg:items-start
+          text-center lg:text-left
+        "
+      >
         <p className="!text-xs text-gray-400 !mt-2">
-          {t("offer.videoCredit")}{" "}
+          {t("fool.videoCredit")}{" "}
           <a
-            href="https://www.youtube.com/watch?v=isR9_NveQqU"
+            href="https://www.youtube.com/shorts/ye19RRf3Sy4"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-[#E900FF]"
           >
-            {t("offer.videoCreditLinkText")}
+            {t("fool.videoCreditLinkText")}
           </a>
         </p>
 
         {/* Controls */}
-        <div className="flex !gap-4 !mt-4">
+        <div className="flex !gap-4 !mt-4 justify-center lg:justify-start">
           <button
             onClick={togglePlay}
             className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"

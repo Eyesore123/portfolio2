@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next';
 import BackToTopButton from '../components/BackToTopButton';
+import FullWidthVideoFool from '../components/FullWidthVideoFool';
 import '../styles/styles.css';
 
 export default function About() {
@@ -10,7 +11,8 @@ export default function About() {
 
   return (
     <>
-      <section className='flex flex-row justify-center items-center !-mt-10'>
+    <div className='!mt-50 lg:!-mt-10'><FullWidthVideoFool /></div>
+      <section className='flex flex-row justify-center items-center !mt-12'>
         <div className='fronttext1 md:!pt-4 md:!pb-0 md:!pl-6 md:!pr-6 min-w-[70%] lg:max-w-[70%] flex flex-col gap-0 justify-center items-center'>
           <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold'>{t("about.header1")}</h2>
 

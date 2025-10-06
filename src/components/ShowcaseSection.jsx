@@ -71,7 +71,7 @@ window.addEventListener('orientationchange', () => {
 
   return (
     <>
-      <section className='flex flex-row justify-center items-center h-[72vh] !mb-20 !mt-8'>
+      <section className='flex flex-row justify-center items-center h-[72vh] !mb-20 !mt-40 lg:!mt-50'>
         {/* <h2 className='gradienttext flex flex-row justify-center items-center text-center font-bold !mb-30'>
           Projects
         </h2> */}
