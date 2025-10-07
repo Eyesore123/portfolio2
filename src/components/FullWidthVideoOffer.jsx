@@ -35,7 +35,8 @@ export default function FullWidthVideoOffer() {
   };
 
   return (
-    <section className="w-full relative lg:!h-[500px] !mt-10 !mb-16 overflow-hidden shadow-lg">
+    <section className="w-full relative !mt-10 !mb-16 overflow-hidden shadow-lg fullwidth-video">
+
       {/* Background video */}
       <video
         ref={videoRef}

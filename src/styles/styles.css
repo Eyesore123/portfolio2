@@ -408,7 +408,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* max-width: 80vw; */
   min-width: 70vw;
   padding: 2rem 0rem;
   margin-bottom: 0rem;
@@ -1167,5 +1166,11 @@ input:focus::placeholder, textarea:focus::placeholder {
 @media (min-width: 2100px) {
   .customheight {
     height: 1200px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .fullwidth-video {
+    height: 1200px !important;
   }
 }
