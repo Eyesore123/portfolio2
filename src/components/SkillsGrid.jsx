@@ -23,9 +23,9 @@ function throttle(func, limit) {
 }
 
 const skills = [
-  { name: 'JavaScript', level: 85, descriptionKey: 'skills.javascript.description' },
+  { name: 'JavaScript', level: 75, descriptionKey: 'skills.javascript.description' },
   { name: 'TypeScript', level: 60, descriptionKey: 'skills.typescript.description' },
-  { name: 'React', level: 80, descriptionKey: 'skills.react.description' },
+  { name: 'React', level: 75, descriptionKey: 'skills.react.description' },
   { name: 'Next.js', level: 70, descriptionKey: 'skills.nextjs.description' },
   { name: 'Tailwind CSS', level: 80, descriptionKey: 'skills.tailwindcss.description' },
   { name: 'Node.js', level: 65, descriptionKey: 'skills.nodejs.description' },

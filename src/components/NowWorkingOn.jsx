@@ -28,15 +28,15 @@ export default function NowWorkingOn() {
 
             <h2 className='gradienttext text-2xl !mb-14'>{t("nowworkingon.header")}:</h2>
 
-            <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !px-8 !py-10 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
+            <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !px-8 !py-10 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-xl backdrop-blur-sm animate-border-glitch'>
 
-                <p className='text-[var(--text-color2)] text-xl font-bold tracking-wide mb-3 text-shadow'>
+                <p className='text-[var(--text-color2)] text-xl font-bold tracking-wide !mb-3 text-shadow'>
                     {t("nowworkingon.projectTitle")}
                 </p>
-                <p className='text-[var(--text-color)] text-base leading-relaxed mb-2 text-shadow'>
+                <p className='text-[var(--text-color)] text-base leading-relaxed !mb-2 text-shadow'>
                     {t("nowworkingon.description")}
                 </p>
-                <p className='text-[var(--text-color3)] text-sm italic tracking-tight text-shadow'>
+                <p className='text-[var(--text-color3)] !text-sm italic tracking-tight text-shadow'>
                     {t("nowworkingon.eta")}
                 </p>
                 <img src='/blog.png' alt="Blog" className='w-full object-scale-down rounded !mb-2 !h-80 hover:cursor-pointer' onClick={(event) => handleImageClick(event)} />

@@ -7,6 +7,7 @@ import NowWorking from '../components/NowWorking'
 import NowWorkingOn from '../components/NowWorkingOn'
 import SkillsFocus from '../components/SkillsFocus'
 import BackToTopButton from '../components/BackToTopButton'
+import VideoEditing from '../components/VideoEditing'
 
 export default function Projects() {
   return (
@@ -17,6 +18,7 @@ export default function Projects() {
     <NowWorking />
     <NowWorkingOn />
     <SkillsFocus />
+    <VideoEditing />
     <BackToTopButton />
     </>
   )

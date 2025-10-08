@@ -7,16 +7,16 @@ export default function SkillsFocus() {
 
   return (
     <section className='flex flex-row justify-center items-center !pt-0 !mt-0'>
-      <div className='!mt-10 !pb-30 !mb-20 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
+      <div className='!mt-10 !mb-10 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
 
         <h2 className='gradienttext text-2xl !mb-14'>{t('skillsfocus.header')}</h2>
 
-        <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !p-6 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-md backdrop-blur-sm animate-border-glitch'>
+        <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl md:!pb-16 !p-4 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-xl backdrop-blur-sm animate-border-glitch'>
 
           <h5 className='text-[var(--text-color2)] text-xl font-bold tracking-wide !mb-10 !mt-10'>
             {t('skillsfocus.strengthstitle')}
           </h5>
-          <ul className='flex flex-col gap-2 text-left mb-6'>
+          <ul className='flex flex-col gap-2 text-left !mb-6'>
             <li className='flex items-center text-[var(--text-color)] text-base leading-relaxed text-shadow'>
               <span className='!mr-8 flame-animation text-red-500 text-lg'>🔥</span>
               {t('skillsfocus.strengths1')}

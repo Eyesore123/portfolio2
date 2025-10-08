@@ -85,12 +85,12 @@
     "nowworkingon.description": "A fullstack blog app with user authentication, CRUD operations, and a RESTful API. Built with React, Laravel, Inertia and PostgreSQL.",
     "nowworkingon.eta": "Planned release: Summer 2025",
     "nowworkingon.button": "View Project",
-    "skillsfocus.header": "Skills Focus",
-  "skillsfocus.strengthstitle": "My Strengths",
+    "skillsfocus.header": "Skills focus",
+  "skillsfocus.strengthstitle": "My strengths",
   "skillsfocus.strengths1": "Strong problem-solving and analytical thinking",
   "skillsfocus.strengths2": "Excellent communication and teamwork skills",
   "skillsfocus.strengths3": "Adaptable and quick to learn new technologies",
-  "skillsfocus.improvingtitle": "Currently Improving",
+  "skillsfocus.improvingtitle": "Currently improving",
   "skillsfocus.improving1": "Advanced front-end frameworks and libraries",
   "skillsfocus.improving2": "Backend development and database management",
   "skillsfocus.improving3": "Optimizing performance and accessibility",
@@ -137,7 +137,12 @@
       "necessary": "Necessary cookies (required)",
       "optional": "Optional cookies",
       "settings": "Settings"
-    }
+    },
+    "videoediting": {
+  "header": "Video editing",
+  "subheader": "I'm working on my video editing skills. Check out what I made for pnp-power.fi!"
+}
+
   },
   
   "fi": {
@@ -264,6 +269,11 @@
    "fool": {
     "videoCredit": "Video edit:",
     "videoCreditLinkText": "Nostalgia @nostalgia.ediitz"
+},
+
+"videoediting": {
+  "header": "Videoeditointi",
+  "subheader": "Harjoittelen videoeditointitaitojani. Katso, mitä tein pnp-power.fi:lle!"
 },
 
 
