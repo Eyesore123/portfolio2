@@ -78,7 +78,7 @@ window.addEventListener('orientationchange', () => {
         <div className='md:w-7/9 !mb-10 md:!mb-4 flex flex-col md:flex-row gap-6 md:gap-34 items-center'>
 
           <div className="!mt-10 md:!mt-0 w-full scale-90 md:scale-100 md:!mb-30 !md:mb-0 md:w-1/4 flex flex-col gap-10 md:gap-12">
-            <h2 className="text-yellow-400 text-xl font-semibold !mb-2 !text-left">{t("projects.header1")}</h2>
+            <h2 className="text-yellow-400 text-xl font-semibold !mt-14 mb:!mt-0 !mb-2 !text-left">{t("projects.header1")}</h2>
             {projectData.map((project, index) => (
               <div key={project.name}>
                 <button
