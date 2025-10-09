@@ -36,7 +36,7 @@ export default function FullWidthVideoFool() {
   };
 
   return (
-    <section className="w-screen h-100 lg:h-[1000px] customheight overflow-hidden relative !mx-0 !px-0">
+    <section className="w-screen h-90 md:h-[500px] lg:h-[1000px] customheight overflow-hidden relative !mx-0 !px-0">
 
       {/* Loading spinner */}
       {loading && (
@@ -63,14 +63,14 @@ export default function FullWidthVideoFool() {
       {/* Background video */}
       <video
         ref={videoRef}
-        src="/fool.mp4"
+        src="/videos/compressedfool.mp4"
         preload="auto"
         autoPlay
         muted={muted}
         loop
         playsInline
         className="
-          absolute top-0 left-0
+          absolute -top-20 left-0
           w-full h-auto lg:h-full
           min-h-[350px] 
           object-cover
@@ -81,7 +81,7 @@ export default function FullWidthVideoFool() {
       {/* Overlay content */}
       <div
         className="
-          relative z-10
+          relative z-10 !mb-5 md:!mb-0
           !p-6 md:!p-12
           flex flex-col
           justify-center
@@ -102,17 +102,17 @@ export default function FullWidthVideoFool() {
         </p>
 
         {/* Controls */}
-        <div className="flex !gap-4 !mt-4 justify-center lg:justify-start">
+        <div className="flex !gap-4 !mt-3 md:!mt-4 justify-center lg:justify-start">
           <button
             onClick={togglePlay}
-            className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"
+            className="!p-2 md:!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"
             aria-label={playing ? 'Pause Video' : 'Play Video'}
           >
             {playing ? <Pause size={20} /> : <Play size={20} />}
           </button>
           <button
             onClick={toggleMute}
-            className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"
+            className="!p-2 md:!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"
             aria-label={muted ? 'Unmute Audio' : 'Mute Audio'}
           >
             {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}
