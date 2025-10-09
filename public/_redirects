@@ -1,6 +1,3 @@
-# Redirect all old portfolio pages to the new domain
-/*  https://joniputkinen.com/:splat  301!
-
 # Keep sitemap accessible
 /sitemap.xml  /sitemap.xml  200
 
