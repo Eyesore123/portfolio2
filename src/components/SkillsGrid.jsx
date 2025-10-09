@@ -142,7 +142,7 @@ export default function SkillsGrid() {
       <h2 className="text-3xl font-bold text-center !-mb-40 md:!mb-0 !pl-10 !pr-10 md:!p-2 orange">
         {t('projects.skillsheader')}
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 !-mt-38 !-mb-50 md:!mt-14 !md:mb-30 gap-8 scale-75 md:scale-90">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 !-mt-38 !-mb-50 md:!mt-14 !md:mb-30 gap-8 scale-75 md:scale-90 3xl:scale-200">
         {skills.map((skill) => (
           <SkillCard
             key={skill.name}

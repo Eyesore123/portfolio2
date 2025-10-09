@@ -1165,12 +1165,19 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* Custom height for FullWidthVideoFool component based on screen width */
 @media (min-width: 2100px) {
   .customheight {
-    height: 1200px;
+    height: calc(100vh - 100px); /* This will make the height of the element be the full viewport height minus 100px */
+  }
+
+  .fullwidth-video {
+    height: calc(100vh - 100px) !important; /* This will make the height of the element be the full viewport height minus 100px */
   }
 }
 
-@media (min-width: 2100px) {
+/* Custom height for 4K screens */
+@media (min-width: 3840px) {
+
+
   .fullwidth-video {
-    height: 1200px !important;
+    height: 1600px !important; /* This will make the height of the element 1600px for 4K screens */
   }
 }
