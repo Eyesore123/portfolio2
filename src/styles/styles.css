@@ -1173,6 +1173,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 
+@media (min-width: 1900px) and (max-width: 2099px) {
+  .fullwidth-video {
+    height: calc(100vh - 100px); /* This will make the height of the element be the full viewport height minus 100px */
+  }
+}
+
 /* Custom height for 4K screens */
 @media (min-width: 3840px) {
 
