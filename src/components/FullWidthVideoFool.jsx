@@ -36,7 +36,7 @@ export default function FullWidthVideoFool() {
   };
 
   return (
-    <section className="w-screen h-90 md:h-[500px] lg:h-[1000px] 3xl:h-[1600px] customheight overflow-hidden relative !mx-0 !px-0">
+    <section className="w-screen h-90 md:h-[500px] lg:h-[1050px] 3xl:h-[1600px] customheight overflow-hidden relative !mx-0 !px-0">
 
       {/* Loading spinner */}
       {loading && (
@@ -70,7 +70,7 @@ export default function FullWidthVideoFool() {
         loop
         playsInline
         className="
-          absolute -top-20 left-0
+          absolute -top-20 2xl:!-top-30 left-0
           w-full h-auto lg:h-full
           min-h-[350px] 
           object-cover
