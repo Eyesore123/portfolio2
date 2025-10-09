@@ -5,4 +5,4 @@ https://jonis-portfolio.netlify.app/* https://joniputkinen.com/:splat 301!
 /sitemap.xml  /sitemap.xml  200
 
 # SPA fallback for index.html (if needed)
-# /*  /index.html  200
+/*  /index.html  200
