@@ -40,7 +40,7 @@ export default function Home() {
           <div className='grid-span-1 flex flex-row justify-start items-center'></div>
           <div className='hero-text col-span-2 flex flex-col justify-center items-center'>
             <div>
-              <h1 className='movingtext'>Joni Putkinen</h1>
+              <div className='movingtext customsize'>Joni Putkinen</div>
               <div className='typingcontainer'>
                 <h5 className='movingtext animationh5 flex flex-row text-start xl:justify-end m-0 p-0'>&nbsp;
                   <div style={{ display: 'inline-flex'}}>
