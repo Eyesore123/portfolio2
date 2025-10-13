@@ -112,6 +112,12 @@ svg {
     font-size: var(--fs-h1);
     font-weight: 900;
   }
+  @media (max-width: 750px) {
+    .customsize {
+      font-size: var(--fs-h4);
+      font-weight: 900;
+    }
+  }
 }
 
 /* Font colors */
