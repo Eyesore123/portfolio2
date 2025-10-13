@@ -75,7 +75,6 @@ svg {
   /* Font sizes */
 
   h1 {
-    font-size: var(--fs-h1);
     font-weight: 900;
     display: none;
   }
