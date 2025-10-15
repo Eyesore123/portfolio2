@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/styles.css'
 import { useTranslation } from 'react-i18next';
 
-export default function NowWorkingOn() {
+export default function RecentlyFinished() {
 
     const { t } = useTranslation();
 

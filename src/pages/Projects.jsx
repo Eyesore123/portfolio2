@@ -4,7 +4,7 @@ import ShowcaseSection from '../components/ShowcaseSection'
 import ProjectCards from '../components/ProjectCards'
 import SkillsGrid from '../components/SkillsGrid'
 import NowWorking from '../components/NowWorking'
-import NowWorkingOn from '../components/NowWorkingOn'
+import RecentlyFinished from '../components/RecentlyFinished'
 import SkillsFocus from '../components/SkillsFocus'
 import BackToTopButton from '../components/BackToTopButton'
 import VideoEditing from '../components/VideoEditing'
@@ -16,7 +16,7 @@ export default function Projects() {
     <ProjectCards />
     <SkillsGrid />
     <NowWorking />
-    <NowWorkingOn />
+    <RecentlyFinished />
     <SkillsFocus />
     <VideoEditing />
     <BackToTopButton />
