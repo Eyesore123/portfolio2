@@ -29,6 +29,10 @@ export default function SkillsFocus() {
               <span className='!mr-8 flame-animation text-red-500 text-lg'>🔥</span>
               {t('skillsfocus.strengths3')}
             </li>
+            <li className='flex items-center text-[var(--text-color)] text-base leading-relaxed text-shadow'>
+              <span className='!mr-8 flame-animation text-red-500 text-lg'>🔥</span>
+              {t('skillsfocus.strengths4')}
+            </li>
           </ul>
 
           <h5 className='text-[var(--text-color2)] text-xl font-bold tracking-wide !mb-10 !mt-10'>
