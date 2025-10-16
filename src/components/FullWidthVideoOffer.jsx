@@ -82,14 +82,14 @@ export default function FullWidthVideoOffer() {
         <div className="flex !gap-4 !mt-4">
           <button
             onClick={togglePlay}
-            className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"
+            className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors hover:cursor-pointer"
             aria-label={playing ? 'Pause Video' : 'Play Video'}
           >
             {playing ? <Pause size={20} /> : <Play size={20} />}
           </button>
           <button
             onClick={toggleMute}
-            className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors"
+            className="!p-3 rounded-full bg-white/70 hover:bg-white text-black shadow transition-colors hover:cursor-pointer"
             aria-label={muted ? 'Unmute Audio' : 'Mute Audio'}
           >
             {muted ? <VolumeX size={20} /> : <Volume2 size={20} />}

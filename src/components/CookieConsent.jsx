@@ -80,13 +80,13 @@ export default function CookieConsent() {
           <div className="flex flex-col md:flex-row !space-y-2 md:!space-y-0 md:!space-x-3">
             <button
               onClick={() => saveConsent(settings)}
-              className="bg-[#5800FF] hover:bg-[#5800FF]/80 text-white !px-4 !py-2 rounded shadow-md transition-colors"
+              className="bg-[#5800FF] hover:bg-[#5800FF]/80 text-white !px-4 !py-2 rounded shadow-md transition-colors hover:cursor-pointer"
             >
               {t('cookieConsent.accept')}
             </button>
             <button
               onClick={() => saveConsent({ necessary: true, optional: false })}
-              className="bg-[#E900FF] hover:bg-[#E900FF]/80 text-white !px-4 !py-2 rounded shadow-md transition-colors"
+              className="bg-[#E900FF] hover:bg-[#E900FF]/80 text-white !px-4 !py-2 rounded shadow-md transition-colors hover:cursor-pointer"
             >
               {t('cookieConsent.decline')}
             </button>
