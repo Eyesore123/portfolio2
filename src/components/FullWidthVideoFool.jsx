@@ -36,7 +36,7 @@ export default function FullWidthVideoFool() {
   };
 
   return (
-    <section className="w-screen h-90 md:h-[500px] lg:h-[1050px] 3xl:h-[1600px] customheight overflow-hidden relative !mx-0 !px-0">
+    <section className="w-screen h-90 md:h-[500px] lg:h-[1050px] 3xl:h-[1700px] customheight overflow-hidden relative !mx-0 !px-0">
 
       {/* Loading spinner */}
       {loading && (

@@ -953,12 +953,14 @@ textarea {
   text-align: center;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border: 1px solid white;
   outline: none;
 }
 
-input:focus::placeholder, textarea:focus::placeholder {
+input:focus::placeholder,
+textarea:focus::placeholder {
   color: transparent;
 }
 
@@ -1018,8 +1020,13 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* Animation for PrintAdShowcase: */
 
 @keyframes slow-pulse {
-  0%, 100% { opacity: 0.1; }
-  50% { opacity: 0.6; }
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 .animate-slow-pulse {
   animation: slow-pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -1028,7 +1035,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* Animation for arrow bounce: */
 
 @keyframes arrow-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1) translateX(0) translateY(0);
   }
   40% {
@@ -1036,11 +1044,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 .animate-arrow-bounce {
-  animation: arrow-bounce 1s cubic-bezier(0.4,0,0.2,1) infinite;
+  animation: arrow-bounce 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 @media (max-width: 767px) {
   @keyframes arrow-bounce-vertical {
-    0%, 100% {
+    0%,
+    100% {
       transform: scale(1) translateY(0) translateX(0);
     }
     40% {
@@ -1048,7 +1057,7 @@ input:focus::placeholder, textarea:focus::placeholder {
     }
   }
   .animate-arrow-bounce {
-    animation: arrow-bounce-vertical 1s cubic-bezier(0.4,0,0.2,1) infinite;
+    animation: arrow-bounce-vertical 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
 }
 
@@ -1116,7 +1125,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 @keyframes glow-sync {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -1128,7 +1138,8 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 @keyframes phone-sync {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -1176,24 +1187,28 @@ input:focus::placeholder, textarea:focus::placeholder {
 /* Custom height for FullWidthVideoFool component based on screen width */
 @media (min-width: 2100px) {
   .customheight {
-    height: calc(100vh - 100px); /* This will make the height of the element be the full viewport height minus 100px */
+    height: calc(
+      100vh
+    ); /* This will make the height of the element be the full viewport height minus 100px */
   }
 
   .fullwidth-video {
-    height: calc(100vh - 100px) !important; /* This will make the height of the element be the full viewport height minus 100px */
+    height: calc(
+      100vh
+    ) !important; /* This will make the height of the element be the full viewport height minus 100px */
   }
 }
 
 @media (min-width: 1900px) and (max-width: 2099px) {
   .fullwidth-video {
-    height: calc(100vh - 100px); /* This will make the height of the element be the full viewport height minus 100px */
+    height: calc(
+      100vh
+    ); /* This will make the height of the element be the full viewport height minus 100px */
   }
 }
 
 /* Custom height for 4K screens */
 @media (min-width: 3840px) {
-
-
   .fullwidth-video {
     height: 1600px !important; /* This will make the height of the element 1600px for 4K screens */
   }
