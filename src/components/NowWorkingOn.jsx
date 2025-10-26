@@ -1,0 +1,75 @@
+import React from 'react'
+import '../styles/styles.css'
+import { useTranslation } from 'react-i18next';
+
+export default function NowWorkingOn() {
+  const { t } = useTranslation();
+
+  const handleImageClick = (event) => {
+    const img = event.target;
+    if (document.fullscreenElement === img) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    } else {
+      if (img.requestFullscreen) {
+        img.requestFullscreen();
+      } else if (img.webkitRequestFullscreen) {
+        img.webkitRequestFullscreen();
+      } else if (img.msRequestFullscreen) {
+        img.msRequestFullscreen();
+      }
+    }
+  };
+
+  return (
+    <section className='flex flex-row justify-center items-center !pt-0 !mt-0'>
+      <div className='!mt-10 !pb-12 !mb-0 !pl-6 !pr-6 flex flex-col justify-center items-center text-center'>
+
+        <h2 className='gradienttext text-2xl !mb-14'>{t("nowworking.nowworkingon")}</h2>
+
+        <div className='relative bg-[var(--transparent)] border border-bg-gradient-to-r from-[#5800ff] to-[#e900ff] rounded-2xl !px-8 !py-10 shadow-[0_0_20px_rgba(233,0,255,0.3)] w-full max-w-xl backdrop-blur-sm animate-border-glitch'>
+
+          <p className='text-[var(--text-color2)] text-xl font-bold tracking-wide !mb-3 text-shadow'>
+            {t("nowworking.projectTitle")}
+          </p>
+
+          <p className='text-[var(--text-color)] text-base leading-relaxed !mb-2 text-shadow'>
+            {t("nowworking.description")}
+          </p>
+
+          <p className='text-[var(--text-color3)] !text-sm italic tracking-tight text-shadow !mb-2'>
+            {t("nowworking.eta")}
+          </p>
+
+          <img 
+            src='/nowworkingon.png' 
+            alt="Current Project" 
+            className='w-full object-scale-down rounded !mb-2 !h-80 hover:cursor-pointer' 
+            onClick={(event) => handleImageClick(event)} 
+          />
+
+          <style>{`
+            @keyframes border-glitch {
+              0% { border-image-source: linear-gradient(45deg, #5800ff, #e900ff); }
+              25% { border-image-source: linear-gradient(135deg, #5800ff, #e900ff); }
+              50% { border-image-source: linear-gradient(45deg, #5800ff, #e900ff); }
+              75% { border-image-source: linear-gradient(135deg, #5800ff, #e900ff); }
+              100% { border-image-source: linear-gradient(45deg, #5800ff, #e900ff); }
+            }
+
+            .animate-border-glitch {
+              animation: border-glitch 0.5s infinite ease-in-out;
+              border-image-slice: 1;
+              border-width: 3px;
+            }
+
+            .text-shadow {
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(233, 0, 255, 1);
+            }
+          `}</style>
+        </div>
+      </div>
+    </section>
+  )
+}

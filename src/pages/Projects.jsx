@@ -8,6 +8,7 @@ import RecentlyFinished from '../components/RecentlyFinished'
 import SkillsFocus from '../components/SkillsFocus'
 import BackToTopButton from '../components/BackToTopButton'
 import VideoEditing from '../components/VideoEditing'
+import NowWorkingOn from '../components/NowWorkingOn'
 
 export default function Projects() {
   return (
@@ -17,6 +18,7 @@ export default function Projects() {
     <SkillsGrid />
     <NowWorking />
     <RecentlyFinished />
+    <NowWorkingOn />
     <SkillsFocus />
     <VideoEditing />
     <BackToTopButton />

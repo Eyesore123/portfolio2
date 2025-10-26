@@ -1187,15 +1187,11 @@ textarea:focus::placeholder {
 /* Custom height for FullWidthVideoFool component based on screen width */
 @media (min-width: 2100px) {
   .customheight {
-    height: calc(
-      100vh
-    ); /* This will make the height of the element be the full viewport height minus 100px */
+    height: calc(100vh);
   }
 
   .fullwidth-video {
-    height: calc(
-      100vh
-    ) !important; /* This will make the height of the element be the full viewport height minus 100px */
+    height: calc(100vh) !important;
   }
 }
 
