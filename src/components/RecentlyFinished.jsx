@@ -41,6 +41,16 @@ export default function RecentlyFinished() {
                 </p>
                 <img src='/blog.png' alt="Blog" className='w-full object-scale-down rounded !mb-2 !h-80 hover:cursor-pointer' onClick={(event) => handleImageClick(event)} />
 
+                {/* Preview Link */}
+                <a 
+                    href="https://blog.joniputkinen.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className='inline-block text-[var(--text-color2)] font-semibold !mt-3 !px-5 !py-2 rounded-lg border border-[#e900ff] hover:bg-[#e900ff] hover:text-white shadow-[0_0_10px_rgba(233,0,255,0.5)]'
+                >
+                    🔗 {t("nowworking.preview")}
+                </a>
+
                 <style>{`
                     @keyframes border-glitch {
                     0% { border-image-source: linear-gradient(45deg, #5800ff, #e900ff); }
